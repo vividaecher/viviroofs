@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #010b16;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+}
+
+div {
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+span {
+  color: #19c9f2;
+}
+
+p {
+  font-size: 35px;
+  text-transform: lowercase;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #19c9f2;
+  font-size: 25px;
+}
+
+a:hover {
+  color: #4addff;
+}
+
+img {
+  width: 200px;
+  align-self: center;
+}
