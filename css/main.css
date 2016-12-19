@@ -31,11 +31,17 @@ html {
 }
 
 div {
-  margin: 20px auto 35px auto;
+  margin: 100px auto 35px auto;
   color: #fff;
   text-align: center;
   width: 100%;
   max-width: 800px;
+}
+
+@media screen and (max-width: 480px) {
+  div {
+    margin: 20px auto 35px auto;
+  }
 }
 
 h1 {
