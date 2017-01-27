@@ -4,11 +4,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: {
-      css: ['css/**'],
+      clean: {
+      css: ['css/*'],
     },
 
-    sass: {
+      sass: {
             options: {
                 sourceMap: true
             },
@@ -17,9 +17,16 @@ module.exports = function(grunt) {
                     'css/main.css': 'scss/main.scss'
                 }
             }
-        }
+        },
+
+      watch: {
+        files: ['scss/*.scss'],
+        tasks: ['default'],
+    }
+
   });
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-sass');
 
