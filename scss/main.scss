@@ -14,49 +14,60 @@
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #010b16; }
+  background: #010b16;
+}
 
 *:focus {
-  outline: none; }
+  outline: none;
+}
 
 ::-moz-focus-inner {
-  border: none; }
+  border: none;
+}
 
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
 div {
   margin: 100px auto 35px auto;
   color: #fff;
   text-align: center;
   width: 100%;
-  max-width: 800px; }
+  max-width: 800px;
+}
 
 @media screen and (max-width: 480px) {
   div {
-    margin: 20px auto 35px auto; } }
+    margin: 20px auto 35px auto;
+  }
+}
 
 h1 {
   font-size: 40px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 span {
-  color: #19c9f2; }
+  color: #19c9f2;
+}
 
 p {
   font-size: 35px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 a {
   text-decoration: none;
-  color: #19c9f2; }
+  color: #19c9f2;
+}
 
 a:hover {
-  color: #4addff; }
+  color: #4addff;
+}
 
 img {
   width: 200px;
-  align-self: center; }
-
-/*# sourceMappingURL=main.css.map */
+  align-self: center;
+}
