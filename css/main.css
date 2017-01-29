@@ -9,7 +9,7 @@
   font-style: normal;
   text-decoration: none;
   list-style: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserratregular', sans-serif;
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
@@ -26,34 +26,54 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-div {
-  margin: 100px auto 35px auto;
+body {
+  color: #0E324F;
+  font-size: 21px; }
+
+/*&.navigation-open {
+		overflow: hidden;
+	}
+*/
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../font/montserrat-regular-webfont.woff2") format("woff2"), url("../font/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../font/montserrat-bold-webfont.woff2") format("woff2"), url("../font/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+section {
+  margin: 20px auto 35px auto;
   color: #fff;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 800px; }
-
-@media screen and (max-width: 480px) {
-  div {
-    margin: 20px auto 35px auto; } }
+  @media screen and (min-width: 768px) {
+    section {
+      margin: 100px auto 35px auto; } }
 
 h1 {
-  font-size: 40px;
-  padding-bottom: 20px; }
-
-span {
-  color: #19c9f2; }
+  font-family: 'montserratbold', sans-serif;
+  font-size: 72px;
+  padding-bottom: 20px;
+  line-height: 90px; }
+  h1 span {
+    font-family: 'montserratbold', sans-serif;
+    color: #42BDE2; }
 
 p {
-  font-size: 35px;
+  font-size: 21px;
   padding-bottom: 20px; }
 
 a {
-  text-decoration: none;
-  color: #19c9f2; }
-
-a:hover {
-  color: #4addff; }
+  color: #42BDE2; }
+  a:hover, a:focus {
+    color: #20a8d1;
+    text-decoration: none; }
 
 img {
   width: 200px;

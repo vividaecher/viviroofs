@@ -1,3 +1,16 @@
+$primary-color: #010b16;
+$secondary-color: #42BDE2;
+$white: #fff;
+$text-color: #0E324F;
+
+$fliestext: 21px;
+$headline: 72px;
+$navi-font: 72px;
+
+$screen-tablet: 768px;
+$screen-laptop: 992px;
+$screen-desktop: 1280px;
+
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +22,14 @@
   font-style: normal;
   text-decoration: none;
   list-style: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserratregular', sans-serif;
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #010b16;
+  background: $primary-color;
 }
+
 
 *:focus {
   outline: none;
@@ -30,42 +44,69 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-div {
-  margin: 100px auto 35px auto;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  max-width: 800px;
+body {
+	color: $text-color;
+	font-size: $fliestext;
+}
+	/*&.navigation-open {
+		overflow: hidden;
+	}
+*/
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../font/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../font/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@media screen and (max-width: 480px) {
-  div {
-    margin: 20px auto 35px auto;
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../font/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../font/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+  margin: 20px auto 35px auto;
+  color: $white;
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+
+@media screen and (min-width: $screen-tablet) {
+    margin: 100px auto 35px auto;
   }
 }
 
 h1 {
-  font-size: 40px;
+  font-family: 'montserratbold', sans-serif;
+  font-size: $headline;
   padding-bottom: 20px;
-}
+  line-height: 90px;
 
-span {
-  color: #19c9f2;
+  span {
+    font-family: 'montserratbold', sans-serif;
+    color: $secondary-color;
+  }
 }
 
 p {
-  font-size: 35px;
+  font-size: $fliestext;
   padding-bottom: 20px;
 }
 
 a {
-  text-decoration: none;
-  color: #19c9f2;
+  color: $secondary-color;
+
+  &:hover, &:focus {
+    color: darken($secondary-color, 10%);
+		text-decoration: none;
+	}
 }
 
-a:hover {
-  color: #4addff;
-}
 
 img {
   width: 200px;
