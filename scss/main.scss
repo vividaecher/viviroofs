@@ -44,6 +44,8 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+img {width: 100%;}
+
 body {
 	color: $text-color;
 	font-size: $fliestext;
@@ -69,23 +71,11 @@ body {
     font-style: normal;
 }
 
-section {
-  margin: 20px auto 35px auto;
-  color: $white;
-  text-align: left;
-  width: 100%;
-  max-width: 800px;
-
-@media screen and (min-width: $screen-tablet) {
-    margin: 100px auto 35px auto;
-  }
-}
-
 h1 {
   font-family: 'montserratbold', sans-serif;
   font-size: $headline;
-  padding-bottom: 20px;
   line-height: 90px;
+  color: $white;
 
   span {
     font-family: 'montserratbold', sans-serif;
@@ -95,7 +85,6 @@ h1 {
 
 p {
   font-size: $fliestext;
-  padding-bottom: 20px;
 }
 
 a {
@@ -107,8 +96,32 @@ a {
 	}
 }
 
+.wrapper {
+  padding-left: 159px;
+  padding-right: 159px;
 
-img {
-  width: 200px;
-  align-self: center;
 }
+
+
+  .container-start {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+
+    @media screen and (min-width: $screen-laptop) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+        h1 {
+          order: 1;
+        }
+
+        img {
+          order: 2;
+        }
+
+    }
+  }

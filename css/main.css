@@ -26,6 +26,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
+img {
+  width: 100%; }
+
 body {
   color: #0E324F;
   font-size: 21px; }
@@ -46,28 +49,17 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-section {
-  margin: 20px auto 35px auto;
-  color: #fff;
-  text-align: left;
-  width: 100%;
-  max-width: 800px; }
-  @media screen and (min-width: 768px) {
-    section {
-      margin: 100px auto 35px auto; } }
-
 h1 {
   font-family: 'montserratbold', sans-serif;
   font-size: 72px;
-  padding-bottom: 20px;
-  line-height: 90px; }
+  line-height: 90px;
+  color: #fff; }
   h1 span {
     font-family: 'montserratbold', sans-serif;
     color: #42BDE2; }
 
 p {
-  font-size: 21px;
-  padding-bottom: 20px; }
+  font-size: 21px; }
 
 a {
   color: #42BDE2; }
@@ -75,8 +67,23 @@ a {
     color: #20a8d1;
     text-decoration: none; }
 
-img {
-  width: 200px;
-  align-self: center; }
+.wrapper {
+  padding-left: 159px;
+  padding-right: 159px; }
+
+.container-start {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center; }
+  @media screen and (min-width: 992px) {
+    .container-start {
+      flex-direction: row;
+      flex-wrap: nowrap; }
+      .container-start h1 {
+        order: 1; }
+      .container-start img {
+        order: 2; } }
 
 /*# sourceMappingURL=main.css.map */
