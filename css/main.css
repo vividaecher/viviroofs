@@ -35,8 +35,8 @@ html, body, .wrapper {
 
 h1 {
   font-family: 'montserratbold', sans-serif;
-  font-size: 46px;
-  line-height: 55px;
+  font-size: 47px;
+  line-height: 60px;
   color: #fff;
   background: transparent; }
   @media screen and (min-width: 992px) {
@@ -95,10 +95,16 @@ img {
         text-align: left;
         align-self: center;
         width: 30%; } }
+    @media screen and (min-width: 2000px) {
+      .container-start .start-headline {
+        width: 40%; } }
   .container-start .start-img {
     width: 100%; }
     @media screen and (min-width: 1280px) {
       .container-start .start-img {
         width: 70%; } }
+    @media screen and (min-width: 2000px) {
+      .container-start .start-img {
+        width: 60%; } }
 
 /*# sourceMappingURL=main.css.map */

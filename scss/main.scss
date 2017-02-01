@@ -56,8 +56,8 @@ html, body, .wrapper {height: 100%;}
 
 h1 {
   font-family: 'montserratbold', sans-serif;
-  font-size: 46px;
-  line-height: 55px;
+  font-size: 47px;
+  line-height: 60px;
   color: $white;
   background: transparent;
 
@@ -131,13 +131,21 @@ img {
             align-self: center;
             width: 30%;
           }
+
+          @media screen and (min-width: $screen-tv) {
+            width: 40%;
+          }
         }
 
         .start-img {
           width: 100%;
 
-        @media screen and (min-width: $screen-desktop) {
-          width: 70%;
-        }
-      }
+            @media screen and (min-width: $screen-desktop) {
+              width: 70%;
+            }
+
+            @media screen and (min-width: $screen-tv) {
+              width: 60%;
+            }
+          }
     }
