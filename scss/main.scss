@@ -30,6 +30,10 @@ body {
 	font-size: $fliestext;
   background: $primary-color;
   font-family: 'montserratregular', sans-serif;
+
+  &.navigation-open {
+		overflow: hidden;
+	}
 }
 
 html, body, .wrapper {height: 100%;}
@@ -189,4 +193,110 @@ img {
               width: 60%;
             }
           }
+    }
+
+    nav {
+    	background-color: $primary-color;
+
+    	a {
+    		color: white;
+    		font-family: 'montserratbold', sans-serif;
+        font-size: 47px;
+        line-height: 130px;
+        text-decoration: none;
+
+        &:focus{
+    			color: $secondary-color;
+    		}
+
+        @media screen and (min-width: $screen-desktop) {
+      		font-size: $headline;
+      		line-height: 150px;
+
+          &:focus, &:hover {
+      			color: $secondary-color;
+      		}
+        }
+
+    	}
+
+    	.navbar-toggle {
+    		position: absolute;
+    		display: block;
+    		padding: 7px 7px 3px 7px;
+    		background-color: transparent;
+    		border: solid 3px $white;
+    		z-index: 9;
+        right: 67px;
+
+    		&.close-navigation {
+    			position: relative;
+    			margin-top: 20px;
+
+    			span {
+    				display: block;
+    				height: 5px;
+    				background-color: white;
+    				margin-bottom: 4px;
+    				position: absolute;
+    			}
+
+    			span:nth-child(1) {
+    				width: 25px;
+    				transform: rotate(-45deg);
+    			}
+    			span:nth-child(2) {
+    				width: 25px;
+    				opacity: 0;
+    			}
+    			span:nth-child(3) {
+    				width: 25px;
+    				transform: rotate(45deg);
+    			}
+
+    		}
+
+        span {
+    			display: block;
+    			height: 5px;
+    			background-color: white;
+    			margin-bottom: 4px;
+    			transition: all .3s ease;
+    		}
+
+    		span:nth-child(1) {
+    			width: 25px;
+    		}
+    		span:nth-child(2) {
+    			width: 25px;
+    		}
+    		span:nth-child(3) {
+    			width: 25px;
+    		}
+    	}
+
+    	.hamburger-nav {
+    		display: none;
+    		position: fixed;
+    		height: 100vh;
+    		width: 100%;
+    		left: 0;
+    		right: 0;
+    		top: 0;
+    		background: $primary-color;
+    		list-style: none;
+    		z-index: 8;
+    		text-align: center;
+    		flex-direction: column;
+    		justify-content: center;
+    		padding: 2rem 0;
+
+    		.current {
+    			color: $secondary-color;
+    		}
+
+    		&.visible {
+    			display: flex;
+    		}
+    	}
     }
