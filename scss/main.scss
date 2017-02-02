@@ -86,6 +86,34 @@ a {
 	}
 }
 
+header {
+
+  background: $primary-color;
+  padding: 20px;
+
+  @media screen and (min-width: $screen-laptop) {
+    padding: 50px 120px 50px 120px
+  }
+
+  @media screen and (min-width: $screen-tv) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  svg {
+    width: 80px;
+    max-width: 100%;
+
+    @media screen and (min-width: $screen-tablet) {
+      width: 100px;
+    }
+  }
+
+  .logo {
+    fill: $white;
+  }
+}
+
 .wrapper {
   margin-left: 20px;
   margin-right: 20px;

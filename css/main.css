@@ -57,6 +57,25 @@ a {
     color: #20a8d1;
     text-decoration: none; }
 
+header {
+  background: #010b16;
+  padding: 20px; }
+  @media screen and (min-width: 992px) {
+    header {
+      padding: 50px 120px 50px 120px; } }
+  @media screen and (min-width: 2000px) {
+    header {
+      padding-left: 250px;
+      padding-right: 250px; } }
+  header svg {
+    width: 80px;
+    max-width: 100%; }
+    @media screen and (min-width: 768px) {
+      header svg {
+        width: 100px; } }
+  header .logo {
+    fill: #fff; }
+
 .wrapper {
   margin-left: 20px;
   margin-right: 20px; }
