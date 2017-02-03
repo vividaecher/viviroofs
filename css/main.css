@@ -16,7 +16,7 @@ body {
   body.navigation-open {
     overflow: hidden;
     height: 100%; }
-    body.navigation-open .wrapper, body.navigation-open nav, body.navigation-open header, body.navigation-open .container-start {
+    body.navigation-open .wrapper, body.navigation-open nav, body.navigation-open header {
       height: 100%; }
 
 html, body, .wrapper {
