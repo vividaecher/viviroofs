@@ -16,7 +16,7 @@ body {
   body.navigation-open {
     overflow: hidden;
     height: 100%; }
-    body.navigation-open .wrapper, body.navigation-open nav, body.navigation-open header, body.navigation-open .hamburger-nav, body.navigation-open .container-start, body.navigation-open .start-headline, body.navigation-open .start-img {
+    body.navigation-open .wrapper, body.navigation-open nav, body.navigation-open header, body.navigation-open .container-start, body.navigation-open .start-headline, body.navigation-open .start-img {
       height: 100%; }
 
 html, body, .wrapper {
