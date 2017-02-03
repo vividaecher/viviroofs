@@ -34,6 +34,10 @@ body {
   &.navigation-open {
 		overflow: hidden;
     height: 100%;
+
+    .wrapper, nav, header {
+      height: 100%;
+    }
 	}
 }
 
