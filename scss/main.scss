@@ -96,6 +96,7 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  box-sizing: border-box;
 
   @media screen and (min-width: $screen-laptop) {
     padding: 50px 120px 50px 120px
@@ -227,18 +228,29 @@ img {
     		background-color: transparent;
     		border: solid 3px $white;
     		z-index: 9;
-        right: 67px;
+        right: 20px;
+        width: 45px;
+        height: 43px;
+
+        @media screen and (min-width: $screen-laptop) {
+          right: 120px;
+        }
+
+        @media screen and (min-width: $screen-tv) {
+          right: 250px;
+        }
 
     		&.close-navigation {
-    			position: relative;
-    			margin-top: 20px;
+          padding: 18.5px 19.5px;
 
     			span {
     				display: block;
     				height: 5px;
     				background-color: white;
-    				margin-bottom: 4px;
     				position: absolute;
+      			transition: all .3s ease;
+            left: 8px;
+            bottom: 12px;
     			}
 
     			span:nth-child(1) {
@@ -289,7 +301,8 @@ img {
     		text-align: center;
     		flex-direction: column;
     		justify-content: center;
-    		padding: 2rem 0;
+    		padding: 0;
+        margin: 0;
 
     		.current {
     			color: $secondary-color;

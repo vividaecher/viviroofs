@@ -64,7 +64,8 @@ header {
   padding: 20px;
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box; }
   @media screen and (min-width: 992px) {
     header {
       padding: 50px 120px 50px 120px; } }
@@ -162,16 +163,25 @@ nav {
     background-color: transparent;
     border: solid 3px #fff;
     z-index: 9;
-    right: 67px; }
+    right: 20px;
+    width: 45px;
+    height: 43px; }
+    @media screen and (min-width: 992px) {
+      nav .navbar-toggle {
+        right: 120px; } }
+    @media screen and (min-width: 2000px) {
+      nav .navbar-toggle {
+        right: 250px; } }
     nav .navbar-toggle.close-navigation {
-      position: relative;
-      margin-top: 20px; }
+      padding: 18.5px 19.5px; }
       nav .navbar-toggle.close-navigation span {
         display: block;
         height: 5px;
         background-color: white;
-        margin-bottom: 4px;
-        position: absolute; }
+        position: absolute;
+        transition: all .3s ease;
+        left: 8px;
+        bottom: 12px; }
       nav .navbar-toggle.close-navigation span:nth-child(1) {
         width: 25px;
         transform: rotate(-45deg); }
@@ -207,7 +217,8 @@ nav {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 0; }
+    padding: 0;
+    margin: 0; }
     nav .hamburger-nav .current {
       color: #42BDE2; }
     nav .hamburger-nav.visible {
