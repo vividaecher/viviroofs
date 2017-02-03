@@ -123,7 +123,7 @@ img {
     flex-grow: 1;
     text-align: center;
     justify-content: center;
-    z-index: 2; }
+    z-index: 1; }
     @media screen and (min-width: 1280px) {
       .container-start .start-headline {
         text-align: left;
