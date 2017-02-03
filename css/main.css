@@ -14,15 +14,12 @@ body {
   background: #010b16;
   font-family: 'montserratregular', sans-serif; }
   body.navigation-open {
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100%; }
 
 html, body, .wrapper {
   height: 100%; }
 
-/*&.navigation-open {
-		overflow: hidden;
-	}
-*/
 @font-face {
   font-family: 'montserratregular';
   src: url("../font/montserrat-regular-webfont.woff2") format("woff2"), url("../font/montserrat-regular-webfont.woff") format("woff");
@@ -211,7 +208,7 @@ nav {
   nav .hamburger-nav {
     display: none;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     left: 0;
     right: 0;

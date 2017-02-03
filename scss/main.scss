@@ -33,14 +33,13 @@ body {
 
   &.navigation-open {
 		overflow: hidden;
+    height: 100%;
 	}
 }
 
-html, body, .wrapper {height: 100%;}
-	/*&.navigation-open {
-		overflow: hidden;
-	}
-*/
+html, body, .wrapper {
+  height: 100%;
+}
 
 @font-face {
     font-family: 'montserratregular';
@@ -297,7 +296,7 @@ img {
     	.hamburger-nav {
     		display: none;
     		position: fixed;
-    		height: 100vh;
+    		height: 100%;
     		width: 100%;
     		left: 0;
     		right: 0;
