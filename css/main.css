@@ -13,6 +13,8 @@ body {
   font-size: 1.325rem;
   background: #010b16;
   font-family: 'montserratregular', sans-serif; }
+  body.navigation-open {
+    overflow: hidden; }
 
 html, body, .wrapper {
   height: 100%; }
@@ -62,7 +64,8 @@ header {
   padding: 20px;
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box; }
   @media screen and (min-width: 992px) {
     header {
       padding: 50px 120px 50px 120px; } }
@@ -119,7 +122,8 @@ img {
     align-items: center;
     flex-grow: 1;
     text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    z-index: 2; }
     @media screen and (min-width: 1280px) {
       .container-start .start-headline {
         text-align: left;
@@ -128,6 +132,10 @@ img {
     @media screen and (min-width: 2000px) {
       .container-start .start-headline {
         width: 40%; } }
+    @media screen and (min-width: 1280px) {
+      .container-start .start-headline h1 {
+        margin-left: 85px;
+        margin-top: 100px; } }
   .container-start .start-img {
     width: 100%; }
     @media screen and (min-width: 1280px) {
@@ -136,5 +144,89 @@ img {
     @media screen and (min-width: 2000px) {
       .container-start .start-img {
         width: 60%; } }
+
+nav {
+  background-color: #010b16; }
+  nav a {
+    color: white;
+    font-family: 'montserratbold', sans-serif;
+    font-size: 47px;
+    line-height: 130px;
+    text-decoration: none; }
+    nav a:focus {
+      color: #42BDE2; }
+    @media screen and (min-width: 1280px) {
+      nav a {
+        font-size: 4.5rem;
+        line-height: 150px; }
+        nav a:focus, nav a:hover {
+          color: #42BDE2; } }
+  nav .navbar-toggle {
+    position: absolute;
+    display: block;
+    padding: 7px 7px 3px 7px;
+    background-color: transparent;
+    border: solid 3px #fff;
+    z-index: 9;
+    right: 20px;
+    width: 45px;
+    height: 43px; }
+    @media screen and (min-width: 992px) {
+      nav .navbar-toggle {
+        right: 120px; } }
+    @media screen and (min-width: 2000px) {
+      nav .navbar-toggle {
+        right: 250px; } }
+    nav .navbar-toggle.close-navigation {
+      padding: 18.5px 19.5px; }
+      nav .navbar-toggle.close-navigation span {
+        display: block;
+        height: 5px;
+        background-color: white;
+        position: absolute;
+        transition: all .3s ease;
+        left: 8px;
+        bottom: 12px; }
+      nav .navbar-toggle.close-navigation span:nth-child(1) {
+        width: 25px;
+        transform: rotate(-45deg); }
+      nav .navbar-toggle.close-navigation span:nth-child(2) {
+        width: 25px;
+        opacity: 0; }
+      nav .navbar-toggle.close-navigation span:nth-child(3) {
+        width: 25px;
+        transform: rotate(45deg); }
+    nav .navbar-toggle span {
+      display: block;
+      height: 5px;
+      background-color: white;
+      margin-bottom: 4px;
+      transition: all .3s ease; }
+    nav .navbar-toggle span:nth-child(1) {
+      width: 25px; }
+    nav .navbar-toggle span:nth-child(2) {
+      width: 25px; }
+    nav .navbar-toggle span:nth-child(3) {
+      width: 25px; }
+  nav .hamburger-nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #010b16;
+    list-style: none;
+    z-index: 8;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0; }
+    nav .hamburger-nav .current {
+      color: #42BDE2; }
+    nav .hamburger-nav.visible {
+      display: flex; }
 
 /*# sourceMappingURL=main.css.map */
