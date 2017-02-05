@@ -45,6 +45,16 @@ html, body, .wrapper {
   height: 100%;
 }
 
+.sub-pages {
+  background: $white;
+
+  header {
+
+    background: $primary-color;
+  }
+
+}
+
 @font-face {
     font-family: 'montserratregular';
     src: url('../font/montserrat-regular-webfont.woff2') format('woff2'),
@@ -102,7 +112,7 @@ header {
   box-sizing: border-box;
 
   @media screen and (min-width: $screen-laptop) {
-    padding: 50px 120px 50px 120px
+    padding: 30px 120px 30px 120px
   }
 
   @media screen and (min-width: $screen-desktop) {
@@ -183,6 +193,7 @@ img {
             h1 {
               font-size: 3.5rem;
               line-height: 70px;
+              margin-right: -195px;
             }
           }
 
@@ -255,6 +266,7 @@ img {
 
         @media screen and (min-width: $screen-laptop) {
           right: 120px;
+          top: 35px;
         }
 
         @media screen and (min-width: $screen-tv) {

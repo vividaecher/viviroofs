@@ -22,6 +22,11 @@ body {
 html, body, .wrapper {
   height: 100%; }
 
+.sub-pages {
+  background: #fff; }
+  .sub-pages header {
+    background: #010b16; }
+
 @font-face {
   font-family: 'montserratregular';
   src: url("../font/montserrat-regular-webfont.woff2") format("woff2"), url("../font/montserrat-regular-webfont.woff") format("woff");
@@ -67,7 +72,7 @@ header {
   box-sizing: border-box; }
   @media screen and (min-width: 992px) {
     header {
-      padding: 50px 120px 50px 120px; } }
+      padding: 30px 120px 30px 120px; } }
   @media screen and (min-width: 1280px) {
     header {
       background: transparent; } }
@@ -130,7 +135,8 @@ img {
         width: 30%; }
         .container-start .start-headline h1 {
           font-size: 3.5rem;
-          line-height: 70px; } }
+          line-height: 70px;
+          margin-right: -195px; } }
     @media screen and (min-width: 1920px) {
       .container-start .start-headline {
         width: 40%; }
@@ -182,7 +188,8 @@ nav {
     height: 43px; }
     @media screen and (min-width: 992px) {
       nav .navbar-toggle {
-        right: 120px; } }
+        right: 120px;
+        top: 35px; } }
     @media screen and (min-width: 2000px) {
       nav .navbar-toggle {
         right: 250px; } }
