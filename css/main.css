@@ -41,27 +41,41 @@ html, body, .wrapper {
 
 h1 {
   font-family: 'montserratbold', sans-serif;
-  font-size: 47px;
+  font-size: 2.25rem;
   line-height: 60px;
-  color: #fff;
-  background: transparent; }
+  color: #42BDE2;
+  background: transparent;
+  text-align: center; }
   @media screen and (min-width: 992px) {
     h1 {
       line-height: 90px;
       font-size: 4.5rem; } }
+  @media screen and (min-width: 1280px) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 70px; } }
+  @media screen and (min-width: 1920px) {
+    h1 {
+      font-size: 4.5rem;
+      line-height: 90px; } }
   h1 span {
     font-family: 'montserratbold', sans-serif;
     color: #42BDE2;
     background: transparent; }
 
 p {
-  font-size: 1.325rem; }
+  font-size: 1.325rem;
+  padding-bottom: 20px;
+  margin: 0;
+  line-height: 35px; }
+  p strong {
+    color: #42BDE2; }
 
 a {
-  color: #42BDE2; }
+  color: #42BDE2;
+  text-decoration: none; }
   a:hover, a:focus {
-    color: #20a8d1;
-    text-decoration: none; }
+    color: #20a8d1; }
 
 header {
   background: #010b16;
@@ -128,21 +142,19 @@ img {
     text-align: center;
     justify-content: center;
     z-index: 1; }
+    .container-start .start-headline h1 {
+      color: #fff; }
     @media screen and (min-width: 1280px) {
       .container-start .start-headline {
-        text-align: left;
         align-self: center;
+        flex-direction: row;
         width: 30%; }
         .container-start .start-headline h1 {
-          font-size: 3.5rem;
-          line-height: 70px;
-          margin-right: -195px; } }
-    @media screen and (min-width: 1920px) {
+          margin-right: -195px;
+          text-align: left; } }
+    @media screen and (min-width: 2000px) {
       .container-start .start-headline {
-        width: 40%; }
-        .container-start .start-headline h1 {
-          font-size: 4.5rem;
-          line-height: 90px; } }
+        width: 40%; } }
   .container-start .start-img {
     width: 100%; }
     @media screen and (min-width: 1280px) {
@@ -244,5 +256,43 @@ nav {
       color: #42BDE2; }
     nav .hamburger-nav.visible {
       display: flex; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  top: 65px;
+  position: relative;
+  flex-wrap: wrap;
+  padding-bottom: 80px; }
+  @media screen and (min-width: 992px) {
+    .container {
+      top: 165px;
+      flex-wrap: nowrap;
+      flex-direction: row; } }
+  .container .left {
+    order: 2; }
+    @media screen and (min-width: 992px) {
+      .container .left {
+        order: 1;
+        width: 60%;
+        padding-right: 80px; } }
+  .container .right {
+    order: 1; }
+    @media screen and (min-width: 992px) {
+      .container .right {
+        order: 1;
+        width: 40%; } }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  top: 90px; }
+  @media screen and (min-width: 992px) {
+    .heading {
+      top: 170px; } }
+  .heading h1 {
+    padding-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */
