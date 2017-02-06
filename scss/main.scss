@@ -375,13 +375,12 @@ img {
         align-self: center;
         width: 270px;
         margin-top: 20px;
-        list-style: none;
 
         @media screen and (min-width: $screen-tablet) {
           width: 500px;
         }
 
-      img {
+      svg {
         width: 35px;
         align-items: center;
 
@@ -389,6 +388,17 @@ img {
           width: 50px;
         }
       }
+
+      .icons {
+        fill: $white;
+
+        @media screen and (min-width: $screen-laptop) {
+          &:hover, &:focus {
+            fill: $secondary-color;
+          }
+        }
+      }
+
     }
   }
 
