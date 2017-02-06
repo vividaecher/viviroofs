@@ -152,6 +152,12 @@ header {
 
   .logo {
     fill: $white;
+
+    @media screen and (min-width: $screen-laptop) {
+      &:hover, &:focus {
+        fill: $secondary-color;
+      }
+    }
   }
 }
 
@@ -360,7 +366,31 @@ img {
     			display: flex;
     		}
     	}
+
+      .social-media {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        width: 270px;
+        margin-top: 20px;
+        list-style: none;
+
+        @media screen and (min-width: $screen-tablet) {
+          width: 500px;
+        }
+
+      img {
+        width: 35px;
+        align-items: center;
+
+        @media screen and (min-width: $screen-tablet) {
+          width: 50px;
+        }
+      }
     }
+  }
 
     .container {
       display: flex;

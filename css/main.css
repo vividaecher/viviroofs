@@ -102,6 +102,9 @@ header {
         width: 100px; } }
   header .logo {
     fill: #fff; }
+    @media screen and (min-width: 992px) {
+      header .logo:hover, header .logo:focus {
+        fill: #42BDE2; } }
 
 .wrapper {
   margin-left: 20px;
@@ -256,6 +259,23 @@ nav {
       color: #42BDE2; }
     nav .hamburger-nav.visible {
       display: flex; }
+  nav .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 270px;
+    margin-top: 20px;
+    list-style: none; }
+    @media screen and (min-width: 768px) {
+      nav .social-media {
+        width: 500px; } }
+    nav .social-media img {
+      width: 35px;
+      align-items: center; }
+      @media screen and (min-width: 768px) {
+        nav .social-media img {
+          width: 50px; } }
 
 .container {
   display: flex;
