@@ -204,7 +204,9 @@ nav {
     @media screen and (min-width: 992px) {
       nav .navbar-toggle {
         right: 120px;
-        top: 35px; } }
+        top: 35px; }
+        nav .navbar-toggle:hover, nav .navbar-toggle:focus {
+          border: solid 3px #42BDE2; } }
     @media screen and (min-width: 2000px) {
       nav .navbar-toggle {
         right: 250px; } }
@@ -213,11 +215,15 @@ nav {
       nav .navbar-toggle.close-navigation span {
         display: block;
         height: 5px;
-        background-color: white;
+        background-color: #fff;
         position: absolute;
         transition: all .3s ease;
         left: 8px;
         bottom: 12px; }
+        @media screen and (min-width: 992px) {
+          nav .navbar-toggle.close-navigation span:hover, nav .navbar-toggle.close-navigation span:focus {
+            background-color: #42BDE2;
+            transition: none; } }
       nav .navbar-toggle.close-navigation span:nth-child(1) {
         width: 25px;
         transform: rotate(-45deg); }
@@ -230,9 +236,13 @@ nav {
     nav .navbar-toggle span {
       display: block;
       height: 5px;
-      background-color: white;
+      background-color: #fff;
       margin-bottom: 4px;
       transition: all .3s ease; }
+      @media screen and (min-width: 992px) {
+        nav .navbar-toggle span:hover, nav .navbar-toggle span:focus {
+          background-color: #42BDE2;
+          transition: none; } }
     nav .navbar-toggle span:nth-child(1) {
       width: 25px; }
     nav .navbar-toggle span:nth-child(2) {

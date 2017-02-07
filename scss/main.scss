@@ -285,9 +285,14 @@ img {
         width: 45px;
         height: 43px;
 
+
         @media screen and (min-width: $screen-laptop) {
           right: 120px;
           top: 35px;
+
+          &:hover, &:focus {
+            border: solid 3px $secondary-color;
+          }
         }
 
         @media screen and (min-width: $screen-tv) {
@@ -300,11 +305,18 @@ img {
     			span {
     				display: block;
     				height: 5px;
-    				background-color: white;
+    				background-color: $white;
     				position: absolute;
       			transition: all .3s ease;
             left: 8px;
             bottom: 12px;
+
+            @media screen and (min-width: $screen-laptop) {
+              &:hover, &:focus {
+                background-color: $secondary-color;
+                transition: none;
+              }
+            }
     			}
 
     			span:nth-child(1) {
@@ -325,9 +337,16 @@ img {
         span {
     			display: block;
     			height: 5px;
-    			background-color: white;
+    			background-color: $white;
     			margin-bottom: 4px;
     			transition: all .3s ease;
+
+          @media screen and (min-width: $screen-laptop) {
+            &:hover, &:focus {
+              background-color: $secondary-color;
+              transition: none;
+            }
+          }
     		}
 
     		span:nth-child(1) {
