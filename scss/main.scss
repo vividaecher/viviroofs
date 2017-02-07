@@ -5,6 +5,7 @@ $text-color: #0E324F;
 
 $fliestext: 1.325rem;
 $headline: 4.5rem;
+$sub-headline: 2.25rem;
 $navi-font-desktop: 3.5rem;
 
 $screen-tablet: 768px;
@@ -98,6 +99,12 @@ h1 {
     color: $secondary-color;
     background: transparent;
   }
+}
+
+h2 {
+  font-family: 'montserratbold', sans-serif;
+  font-size: 2.25rem;
+  color: $secondary-color;  
 }
 
 p {
@@ -290,7 +297,7 @@ img {
           right: 120px;
           top: 35px;
 
-          &:hover, &:focus {
+          &:hover {
             border: solid 3px $secondary-color;
           }
         }
@@ -312,7 +319,7 @@ img {
             bottom: 12px;
 
             @media screen and (min-width: $screen-laptop) {
-              &:hover, &:focus {
+              &:hover {
                 background-color: $secondary-color;
                 transition: none;
               }
@@ -386,7 +393,7 @@ img {
     		}
     	}
 
-      .design-skills {
+      .design-platforms {
         display: block;
 
         ul {
