@@ -81,7 +81,7 @@ h1 {
   background: transparent;
   text-align: center;
 
-    @media screen and (min-width: $screen-laptop) {
+    @media screen and (min-width: $screen-tablet) {
       line-height: 90px;
       font-size: $headline;
     }
@@ -304,10 +304,6 @@ img {
         @media screen and (min-width: $screen-laptop) {
           right: 120px;
           top: 35px;
-
-          &:hover {
-            border: solid 3px $secondary-color;
-          }
         }
 
         @media screen and (min-width: $screen-tv) {
@@ -325,13 +321,6 @@ img {
       			transition: all .3s ease;
             left: 8px;
             bottom: 12px;
-
-            @media screen and (min-width: $screen-laptop) {
-              &:hover {
-                background-color: $secondary-color;
-                transition: none;
-              }
-            }
     			}
 
     			span:nth-child(1) {
@@ -355,13 +344,6 @@ img {
     			background-color: $white;
     			margin-bottom: 4px;
     			transition: all .3s ease;
-
-          @media screen and (min-width: $screen-laptop) {
-            &:hover, &:focus {
-              background-color: $secondary-color;
-              transition: none;
-            }
-          }
     		}
 
     		span:nth-child(1) {
@@ -460,21 +442,23 @@ img {
     .container {
       display: flex;
       flex-direction: column;
-      top: 65px;
+      top: 60px;
       position: relative;
       flex-wrap: wrap;
       padding-bottom: 80px;
 
-      @media screen and (min-width: $screen-laptop) {
-          top: 165px;
+      @media screen and (min-width: $screen-tablet) {
+          top: 70px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+          top: 155px;
           flex-wrap: nowrap;
           flex-direction: row;
       }
 
       .left {
-        order: 2;
-
-        @media screen and (min-width: $screen-laptop) {
+        @media screen and (min-width: $screen-desktop) {
           order: 1;
           width: 60%;
           padding-right: 80px;
@@ -482,10 +466,8 @@ img {
       }
 
       .right{
-        order: 1;
-
-        @media screen and (min-width: $screen-laptop) {
-          order: 1;
+        @media screen and (min-width: $screen-desktop) {
+          order: 2;
           width: 40%;
         }
       }
@@ -499,6 +481,10 @@ img {
       top: 90px;
 
       @media screen and (min-width: $screen-laptop) {
+        top: 110px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
         top: 170px;
       }
 
@@ -507,16 +493,25 @@ img {
       }
     }
 
-    .cta {
-        background: $secondary-color;
-        color: #fff;
-        border: none;
-        padding: 11px 70px 14px 70px;
-        max-width: 270px;
-        max-height: 50px;
-        margin-top: 30px;
+    .button {
+      text-align: center;
 
-        &:hover, &:focus {
-          background: darken($secondary-color, 10%);
-      	}
+      @media screen and (min-width: $screen-laptop) {
+        text-align: left;
+      }
+      .cta {
+          background: $secondary-color;
+          color: #fff;
+          border: none;
+          padding: 11px 70px 14px 70px;
+          max-width: 270px;
+          max-height: 50px;
+          margin-top: 30px;
+          cursor: pointer;
+          text-align: center;
+
+          &:hover, &:focus {
+            background: darken($secondary-color, 10%);
+          }
+      }
     }
