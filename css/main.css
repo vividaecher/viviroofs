@@ -266,7 +266,9 @@ nav {
     padding: 0;
     margin: 0; }
     nav .hamburger-nav .current {
-      color: #42BDE2; }
+      color: #42BDE2;
+      border: solid 3px #42BDE2;
+      padding: 10px 45px; }
     nav .hamburger-nav.visible {
       display: flex; }
   nav .design-platforms {

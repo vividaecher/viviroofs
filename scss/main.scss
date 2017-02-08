@@ -376,6 +376,8 @@ img {
 
     		.current {
     			color: $secondary-color;
+          border: solid 3px $secondary-color;
+          padding: 10px 45px;
     		}
 
     		&.visible {
