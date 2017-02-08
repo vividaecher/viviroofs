@@ -268,7 +268,10 @@ nav {
     nav .hamburger-nav .current {
       color: #42BDE2;
       border: solid 3px #42BDE2;
-      padding: 10px 45px; }
+      padding: 5px 35px; }
+      @media screen and (min-width: 768px) {
+        nav .hamburger-nav .current {
+          padding: 10px 45px; } }
     nav .hamburger-nav.visible {
       display: flex; }
   nav .design-platforms {

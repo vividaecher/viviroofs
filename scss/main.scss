@@ -377,7 +377,11 @@ img {
     		.current {
     			color: $secondary-color;
           border: solid 3px $secondary-color;
-          padding: 10px 45px;
+          padding: 5px 35px;
+
+          @media screen and (min-width: $screen-tablet) {
+            padding: 10px 45px;
+          }
     		}
 
     		&.visible {
