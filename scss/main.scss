@@ -6,7 +6,7 @@ $text-color: #0E324F;
 $fliestext: 1.325rem;
 $headline: 4.5rem;
 $headline-medium: 3.5rem;
-$sub-headline-medium: 2.25rem;
+$sub-headline-medium: 2rem;
 $sub-headline: 1.5rem;
 $navi-font-desktop: 3.5rem;
 
@@ -76,7 +76,7 @@ html, body, .wrapper {
 h1 {
   font-family: 'montserratbold', sans-serif;
   font-size: $sub-headline-medium;
-  line-height: 60px;
+  line-height: 45px;
   color: $secondary-color;
   background: transparent;
   text-align: center;
@@ -451,7 +451,19 @@ img {
       top: 60px;
       position: relative;
       flex-wrap: wrap;
-      padding-bottom: 80px;
+      padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 30px;
+
+        @media screen and (min-width: $screen-tablet) {
+          padding-bottom: 45px;
+        }
+
+        @media screen and (min-width: $screen-desktop) {
+          padding-bottom: 90px;
+        }
+      }
 
       @media screen and (min-width: $screen-tablet) {
           top: 70px;
@@ -461,6 +473,7 @@ img {
           top: 155px;
           flex-wrap: nowrap;
           flex-direction: row;
+          padding-bottom: 45px;
       }
 
       .left {

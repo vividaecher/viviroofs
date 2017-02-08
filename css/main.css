@@ -41,8 +41,8 @@ html, body, .wrapper {
 
 h1 {
   font-family: 'montserratbold', sans-serif;
-  font-size: 2.25rem;
-  line-height: 60px;
+  font-size: 2rem;
+  line-height: 45px;
   color: #42BDE2;
   background: transparent;
   text-align: center; }
@@ -71,7 +71,7 @@ h2 {
   @media screen and (min-width: 768px) {
     h2 {
       text-align: left;
-      font-size: 2.25rem; } }
+      font-size: 2rem; } }
 
 p {
   font-size: 1.325rem;
@@ -317,7 +317,15 @@ nav {
   top: 60px;
   position: relative;
   flex-wrap: wrap;
-  padding-bottom: 80px; }
+  padding-bottom: 30px; }
+  .container:last-child {
+    padding-bottom: 30px; }
+    @media screen and (min-width: 768px) {
+      .container:last-child {
+        padding-bottom: 45px; } }
+    @media screen and (min-width: 1280px) {
+      .container:last-child {
+        padding-bottom: 90px; } }
   @media screen and (min-width: 768px) {
     .container {
       top: 70px; } }
@@ -325,7 +333,8 @@ nav {
     .container {
       top: 155px;
       flex-wrap: nowrap;
-      flex-direction: row; } }
+      flex-direction: row;
+      padding-bottom: 45px; } }
   @media screen and (min-width: 1280px) {
     .container .left {
       order: 1;
