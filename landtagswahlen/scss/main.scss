@@ -1,0 +1,740 @@
+$primary-color: #4db0e1;
+$secondary-color: #1e3145;
+$highlight-color: #e5007d;
+$navi-color: #459eca;
+$text-color: #565656;
+$light-gray: #eee;
+
+$color-gradient: linear-gradient(135deg, rgba(77, 176, 225, .5) 0%, transparent 100%);
+$white-gradient: linear-gradient(to bottom, white 75%, transparent 100%);
+
+$fliestext: 1.8rem;
+$headline: 2.6rem;
+$navi-font: 2.6rem;
+$navi-font-desktop: 1.5rem;
+
+$screen-tablet: 768px;
+$screen-laptop: 992px;
+$screen-desktop: 1280px;
+
+* {
+	padding: 0;
+}
+
+body {
+	color: $text-color;
+	font-size: $fliestext;
+	line-height: 3rem;
+	font-family: 'ralewayregular', Arial, sans-serif;
+
+	&.navigation-open {
+		overflow: hidden;
+	}
+
+	.row {
+		margin: 0;
+	}
+}
+
+@font-face {
+	font-family: 'ralewayblack';
+	src: url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewayregular';
+	src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaysemibold';
+	src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+	color: $highlight-color;
+
+	&:hover, &:focus {
+		color: $primary-color;
+		opacity: 1;
+		text-decoration: none;
+	}
+}
+
+p {
+	margin-bottom: 4rem;
+}
+
+h1 {
+	font-size: $headline;
+	font-family: 'ralewaysemibold', Arial, sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	font-family: 'ralewayblack', Arial, sans-serif;
+	font-size: $headline;
+
+	@media (min-width: $screen-laptop) {
+		color: $text-color;
+	}
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-family: 'ralewaysemibold', Arial, sans-serif;
+	color: $highlight-color;
+}
+
+
+.desktop-nav {
+	display: none;
+
+	@media (min-width: $screen-laptop) {
+
+		float: left;
+		width: 15rem;
+		height: 100vh;
+		overflow-y: scroll;
+		display: block;
+
+		ul {
+			list-style: none;
+
+			li {
+				align-self: center;
+				border-bottom: solid .2rem $navi-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+		a {
+			color: white;
+			font-family: 'ralewaysemibold', Arial, sans-serif;
+			font-size: $navi-font-desktop;
+			opacity: 1;
+			line-height: inherit;
+			padding: 2.5rem 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+
+			&:hover {
+				background: darken($primary-color, 5%);
+			}
+
+			&.current {
+				background: $color-gradient, $highlight-color;
+
+				&:hover {
+					background: darken($highlight-color, .5%);
+				}
+			}
+
+			img {
+				width: 2.5rem;
+				align-self: center;
+				padding-bottom: .5rem;
+			}
+		}
+
+
+	}
+}
+
+nav {
+	background-color: $primary-color;
+
+	a {
+		color: white;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+		font-size: $navi-font;
+		line-height: 9rem;
+		opacity: .5;
+	}
+
+	.navbar-toggle {
+		position: absolute;
+		right: 2rem;
+		display: block;
+		width: 2rem;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		z-index: 9;
+
+		&.close-navigation {
+			position: relative;
+			margin-top: 1.5rem;
+
+			span {
+				display: block;
+				height: .3rem;
+				background-color: white;
+				margin-bottom: .5rem;
+				position: absolute;
+			}
+
+			span:nth-child(1) {
+				width: 3rem;
+				transform: rotate(-45deg);
+			}
+			span:nth-child(2) {
+				width: 2.5rem;
+				opacity: 0;
+			}
+			span:nth-child(3) {
+				width: 3rem;
+				transform: rotate(45deg);
+			}
+
+		}
+
+		@media (min-width: $screen-laptop) {
+			display: none;
+		}
+
+		span {
+			display: block;
+			height: .3rem;
+			background-color: white;
+			margin-bottom: .5rem;
+			transition: all .3s ease;
+		}
+
+		span:nth-child(1) {
+			width: 3rem;
+		}
+		span:nth-child(2) {
+			width: 2.5rem;
+		}
+		span:nth-child(3) {
+			width: 2rem;
+		}
+	}
+
+	.hamburger-nav {
+		display: none;
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: $secondary-color;
+		list-style: none;
+		z-index: 8;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem 0;
+
+		.current-mobile {
+			opacity: 1;
+		}
+
+		&.visible {
+			display: flex;
+		}
+	}
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	&.landtagswahlen {
+		background: url("../img/landtagswahlen_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+
+	&.impressum {
+		background: url("../img/impressum_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+
+	&.politik-abc {
+		background: url("../img/politik-abc_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+
+	&.sonntagsfrage {
+		background: url("../img/sonntagsfrage_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+
+	&.warum-waehlen {
+		background: url("../img/warum-waehlen_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+
+	&.parteiprogramme {
+		background: url("../img/parteiprogramme_bg.png") $primary-color;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+}
+
+.container-full {
+	background: white;
+	max-width: 1920px;
+}
+
+main {
+	height: 100vh;
+
+	@media (min-width: $screen-laptop) {
+		overflow-y: scroll;
+	}
+}
+
+.main-content {
+	padding: 2rem 5rem;
+
+
+	@media (min-width: $screen-laptop) {
+		padding: 0 10rem;
+	}
+
+	.content-flex {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $screen-laptop) {
+			flex-direction: row;
+
+			article {
+				flex: 1;
+				padding-right: 4rem;
+
+			}
+		}
+	}
+
+	.sonntagsfrage-flex {
+
+		form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+
+			@media (min-width: $screen-tablet) {
+				flex-direction: row;
+			}
+		}
+
+		.partei-box {
+			width: 20rem;
+			height: 20rem;
+			margin: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+				position: relative;
+
+				&:hover{
+					&:before {
+					content: "";
+					background: url(../img/circle.svg) no-repeat;
+					width: 3rem;
+					height: 3rem;
+					position: absolute;
+					top: 1rem;
+					right: 1rem;
+					}
+				}
+			}
+		}
+
+		.partei-radio {
+			display: none;
+		}
+
+		input[type="radio"]:checked + label{
+
+			div {
+				position: relative;
+
+				&:before {
+					content: "";
+					background: url(../img/tick.svg) no-repeat;
+					position: absolute;
+					top: 1rem;
+					right: 1rem;
+					width: 3rem;
+					height: 3rem;
+				}
+			}
+		}
+
+		.submit {
+			margin: 2rem auto;
+			width: 100%;
+		}
+	}
+
+	.btn {
+		color: white;
+		text-transform: uppercase;
+		border-radius: 0;
+		border: none;
+		padding: 1rem;
+		font-size: $fliestext;
+		margin: 1rem auto 4rem auto;
+		background: $color-gradient, $highlight-color;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+
+		&:focus, &:hover {
+			color: white;
+		}
+
+		@media (min-width: $screen-laptop) {
+			&:hover {
+				background: darken($highlight-color, .5%);
+				color: white;
+			}
+		}
+	}
+
+	button {
+		color: white;
+		text-transform: uppercase;
+		border-radius: 0;
+		border: none;
+		padding: 0.5rem 1rem;
+		font-size: $fliestext;
+		margin: 1rem auto 4rem auto;
+		background: $color-gradient, $highlight-color;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+		outline: none;
+
+
+		&[disabled] {
+			background: #ccc;
+
+			&:hover {
+				background: #ccc;
+			}
+		}
+
+		&:focus, &:hover {
+			color: white;
+		}
+
+		@media (min-width: $screen-laptop) {
+			&:hover {
+				background: darken($highlight-color, .5%);
+				color: white;
+			}
+		}
+
+	}
+}
+
+header {
+	background: $secondary-color;
+	padding: 2rem 0;
+	margin-bottom: 3rem;
+
+	@media (min-width: $screen-laptop) {
+		background: white;
+	}
+
+	.header-flex {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+
+		.logo {
+			order: 1;
+		}
+		.heading1 {
+			order: 2;
+		}
+		.heading2 {
+			order: 3;
+		}
+
+		@media (min-width: $screen-laptop) {
+			flex-direction: row;
+			.logo {
+				order: 2;
+			}
+			.heading1 {
+				order: 1;
+
+			}
+			.heading2 {
+				order: 3;
+			}
+
+		}
+		svg {
+			width: 50%;
+			max-width: 30rem;
+
+			.st0, .st1, .st2 {
+				fill: white;
+			}
+
+			@media (min-width: $screen-laptop) {
+
+				.st0 {
+					fill: $text-color;
+				}
+				.st1 {
+					fill: $highlight-color;
+				}
+				.st2 {
+					fill: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+.graph-svg {
+	display: none;
+
+	@media (min-width: $screen-tablet) {
+		display: block;
+		width: 100%;
+		.graph1, .graph2 {
+			stroke-width: 2;
+			stroke-miterlimit: 10;
+			fill: none;
+		}
+		.graph1 {
+			stroke: $highlight-color;
+		}
+		.graph2 {
+			stroke: $primary-color;
+		}
+	}
+}
+
+/* TAB-NAVIGATION */
+
+.tab-nav {
+
+
+	width: 100%;
+
+	ul {
+		list-style: none;
+		flex-direction: row;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: $screen-tablet) {
+			flex-wrap: wrap;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 2rem 0;
+		display: block;
+		font-family: 'ralewaysemibold', Arial, sans-serif;
+		&:hover {color: white;}
+	}
+
+	li {
+		background: $primary-color;
+		border-bottom: .3rem solid $navi-color;
+		width: 100%;
+		text-align: center;
+		border-right: .1rem solid $light-gray;
+
+		@media (max-width: $screen-tablet) {
+			margin-top: 1rem;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		&:last-of-type {
+			border-right: none;
+		}
+
+		&:hover {background: darken($primary-color, 5%);}
+	}
+
+	.selected {
+		background: $color-gradient, $highlight-color !important;
+		border-bottom-color: $highlight-color;
+
+		a {
+			color: white;
+		}
+	}
+}
+
+.tabcontents {
+	p {
+		margin-bottom: 2rem;
+	}
+	img {
+		width: 20rem;
+		padding: 2rem 0;
+
+		@media (max-width: $screen-tablet) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+/* HELPERCLASS CLEARFIX */
+
+.clearfix:before, .clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+.ausgabe {
+	h3 {
+		padding-bottom: 2rem;
+		font-size: 3rem;
+		margin: 0;
+		text-align: center;
+	}
+}
+
+.ausgabe-flex {
+	display: flex;
+	flex-direction: column;
+
+	.diagramm {
+		color: #fff;
+		padding: .5rem;
+		animation: move 1.5s ease-in-out;
+		font-weight: bold;
+		margin-bottom: 2rem;
+
+		@keyframes move {
+			from {
+				width: 0;
+			}
+		}
+	}
+	.diagramm-linke {background: #DC0000;}
+	.diagramm-spd {background: #FE0000;}
+	.diagramm-gruenen {background: #1FA12D;}
+	.diagramm-fdp {background: #FBEB2C;}
+	.diagramm-cdu {background: #000;}
+	.diagramm-afd {background: #009EE0;}
+}
+
+.message {
+	&.-ergebnis {
+		margin: 2rem 0;
+		border-top: .2rem solid $light-gray;
+		padding-top: 2rem;
+
+		span {
+			font-weight: bold;
+			color: $highlight-color;
+		}
+	}
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5rem;
+
+	@media (min-width: $screen-desktop) {
+		flex-direction: row;
+	}
+
+	.card {
+		padding: 2.5rem;
+		margin: 1rem 0;
+		color: white;
+		background-color: $primary-color;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (min-width: $screen-desktop) {
+			width: 30%;
+			margin: 0 2.5%;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		h3 {
+			text-transform: uppercase;
+			font-family: 'ralewaysemibold', Arial, sans-serif;
+			font-size: 2.1rem;
+			position: relative;
+			border: none;
+			padding-left: 3rem;
+			padding-bottom: 2rem;
+			color: white;
+		}
+
+		h3::before {
+			content: "\201D";
+			font-size: 7rem;
+			display: block;
+			position: absolute;
+			top: -3rem;
+			left: 0;
+		}
+	}
+}

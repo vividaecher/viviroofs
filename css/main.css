@@ -317,7 +317,7 @@ nav {
   top: 60px;
   position: relative;
   flex-wrap: wrap;
-  padding-bottom: 30px; }
+  padding-bottom: 0; }
   .container:last-child {
     padding-bottom: 30px; }
     @media screen and (min-width: 768px) {
@@ -325,7 +325,10 @@ nav {
         padding-bottom: 45px; } }
     @media screen and (min-width: 1280px) {
       .container:last-child {
-        padding-bottom: 90px; } }
+        padding-bottom: 150px; } }
+    @media screen and (min-width: 1920px) {
+      .container:last-child {
+        padding-bottom: 250px; } }
   @media screen and (min-width: 768px) {
     .container {
       top: 70px; } }
@@ -334,7 +337,10 @@ nav {
       top: 155px;
       flex-wrap: nowrap;
       flex-direction: row;
-      padding-bottom: 45px; } }
+      padding-bottom: 150px; } }
+  @media screen and (min-width: 1920px) {
+    .container {
+      padding-bottom: 250px; } }
   @media screen and (min-width: 1280px) {
     .container .left {
       order: 1;
