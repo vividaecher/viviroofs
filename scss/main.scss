@@ -13,6 +13,7 @@ $navi-font-desktop: 3.5rem;
 $screen-tablet: 768px;
 $screen-laptop: 992px;
 $screen-desktop: 1280px;
+$screen-hd: 1920px;
 $screen-tv: 2000px;
 
 *:focus {
@@ -80,6 +81,7 @@ h1 {
   color: $secondary-color;
   background: transparent;
   text-align: center;
+  margin: 0;
 
     @media screen and (min-width: $screen-tablet) {
       line-height: 90px;
@@ -91,7 +93,7 @@ h1 {
       line-height: 70px;
     }
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: $screen-hd) {
       font-size: $headline;
       line-height: 90px;
     }
@@ -108,6 +110,8 @@ h2 {
   font-size: $sub-headline;
   color: $secondary-color;
   text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
 
   @media screen and (min-width: $screen-tablet) {
     text-align: left;
@@ -122,6 +126,11 @@ p {
   line-height: 35px;
 
   strong {
+    color: $secondary-color;
+  }
+
+  span {
+    font-style: italic;
     color: $secondary-color;
   }
 }
@@ -445,43 +454,52 @@ img {
     }
   }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      top: 60px;
-      position: relative;
-      flex-wrap: wrap;
-      padding-bottom: 0;
-
-      &:last-child {
-        padding-bottom: 30px;
-
-        @media screen and (min-width: $screen-tablet) {
-          padding-bottom: 45px;
-        }
-
-        @media screen and (min-width: $screen-desktop) {
-          padding-bottom: 150px;
-        }
-
-        @media screen and (min-width: 1920px) {
-          padding-bottom: 250px;
-        }
-      }
+    .heading {
+      padding-top: 110px;
+      padding-bottom: 20px;
 
       @media screen and (min-width: $screen-tablet) {
-          top: 70px;
+        padding-top: 140px;
+        padding-bottom: 50px;
+      }
+
+      @media screen and (min-width: $screen-laptop) {
+        padding-top: 170px;
+        padding-bottom: 50px;
       }
 
       @media screen and (min-width: $screen-desktop) {
-          top: 155px;
-          flex-wrap: nowrap;
-          flex-direction: row;
-          padding-bottom: 150px;
+        padding-top: 200px;
+        padding-bottom: 60px;
       }
 
-      @media screen and (min-width: 1920px) {
-          padding-bottom: 250px;
+      @media screen and (min-width: $screen-hd) {
+        padding-top: 230px;
+        padding-bottom: 80px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+    }
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+          &:last-child {
+            padding-bottom: 60px;
+
+            @media screen and (min-width: $screen-desktop) {
+              padding-bottom: 150px;
+            }
+          }
+
+      @media screen and (min-width: $screen-desktop) {
+          flex-wrap: nowrap;
+          flex-direction: row;
       }
 
       .left {
@@ -500,28 +518,59 @@ img {
       }
     }
 
-    .heading {
+    .container-portfolio {
       display: flex;
       flex-direction: column;
-      align-items: stretch;
-      position: relative;
-      top: 90px;
+      flex-wrap: wrap;
+      padding-bottom: 80px;
 
-      @media screen and (min-width: $screen-laptop) {
-        top: 110px;
-      }
+        &:first-child {
+          padding-top: 130px;
+
+          @media screen and (min-width: $screen-hd) {
+              padding-top: 280px;
+          }
+        }
 
       @media screen and (min-width: $screen-desktop) {
-        top: 170px;
+          flex-wrap: nowrap;
+          flex-direction: row;
+      }
+
+      @media screen and (min-width: $screen-hd) {
+          padding-bottom: 200px;
       }
 
       h1 {
-        padding-bottom: 30px;
+        padding: 10px 0;
+        text-align: left;
+        font-size: $headline-medium;
       }
+
+      h2 {
+        font-size: $sub-headline;
+      }
+
+      .left {
+        @media screen and (min-width: $screen-desktop) {
+          order: 1;
+          width: 60%;
+          padding-right: 80px;
+        }
+      }
+
+      .right{
+        @media screen and (min-width: $screen-desktop) {
+          order: 2;
+          width: 40%;
+        }
+      }
+
     }
 
     .button {
       text-align: center;
+      margin-top: 30px;
 
       @media screen and (min-width: $screen-laptop) {
         text-align: left;
@@ -530,10 +579,9 @@ img {
           background: $secondary-color;
           color: #fff;
           border: none;
-          padding: 11px 70px 14px 70px;
+          padding: 14px 70px 14px 70px;
           max-width: 270px;
           max-height: 50px;
-          margin-top: 30px;
           cursor: pointer;
           text-align: center;
 

@@ -45,7 +45,8 @@ h1 {
   line-height: 45px;
   color: #42BDE2;
   background: transparent;
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
   @media screen and (min-width: 768px) {
     h1 {
       line-height: 90px;
@@ -67,7 +68,9 @@ h2 {
   font-family: 'montserratbold', sans-serif;
   font-size: 1.5rem;
   color: #42BDE2;
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px; }
   @media screen and (min-width: 768px) {
     h2 {
       text-align: left;
@@ -79,6 +82,9 @@ p {
   margin: 0;
   line-height: 35px; }
   p strong {
+    color: #42BDE2; }
+  p span {
+    font-style: italic;
     color: #42BDE2; }
 
 a {
@@ -311,36 +317,41 @@ nav {
         nav .design-platforms .icons:hover, nav .design-platforms .icons:focus {
           fill: #42BDE2; } }
 
+.heading {
+  padding-top: 110px;
+  padding-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .heading {
+      padding-top: 140px;
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 992px) {
+    .heading {
+      padding-top: 170px;
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 1280px) {
+    .heading {
+      padding-top: 200px;
+      padding-bottom: 60px; } }
+  @media screen and (min-width: 1920px) {
+    .heading {
+      padding-top: 230px;
+      padding-bottom: 80px; } }
+  .heading h1 {
+    margin: 0; }
+
 .container {
   display: flex;
   flex-direction: column;
-  top: 60px;
-  position: relative;
-  flex-wrap: wrap;
-  padding-bottom: 0; }
+  flex-wrap: wrap; }
   .container:last-child {
-    padding-bottom: 30px; }
-    @media screen and (min-width: 768px) {
-      .container:last-child {
-        padding-bottom: 45px; } }
+    padding-bottom: 60px; }
     @media screen and (min-width: 1280px) {
       .container:last-child {
         padding-bottom: 150px; } }
-    @media screen and (min-width: 1920px) {
-      .container:last-child {
-        padding-bottom: 250px; } }
-  @media screen and (min-width: 768px) {
-    .container {
-      top: 70px; } }
   @media screen and (min-width: 1280px) {
     .container {
-      top: 155px;
       flex-wrap: nowrap;
-      flex-direction: row;
-      padding-bottom: 150px; } }
-  @media screen and (min-width: 1920px) {
-    .container {
-      padding-bottom: 250px; } }
+      flex-direction: row; } }
   @media screen and (min-width: 1280px) {
     .container .left {
       order: 1;
@@ -351,23 +362,42 @@ nav {
       order: 2;
       width: 40%; } }
 
-.heading {
+.container-portfolio {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  position: relative;
-  top: 90px; }
-  @media screen and (min-width: 992px) {
-    .heading {
-      top: 110px; } }
+  flex-wrap: wrap;
+  padding-bottom: 80px; }
+  .container-portfolio:first-child {
+    padding-top: 130px; }
+    @media screen and (min-width: 1920px) {
+      .container-portfolio:first-child {
+        padding-top: 280px; } }
   @media screen and (min-width: 1280px) {
-    .heading {
-      top: 170px; } }
-  .heading h1 {
-    padding-bottom: 30px; }
+    .container-portfolio {
+      flex-wrap: nowrap;
+      flex-direction: row; } }
+  @media screen and (min-width: 1920px) {
+    .container-portfolio {
+      padding-bottom: 200px; } }
+  .container-portfolio h1 {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 3.5rem; }
+  .container-portfolio h2 {
+    font-size: 1.5rem; }
+  @media screen and (min-width: 1280px) {
+    .container-portfolio .left {
+      order: 1;
+      width: 60%;
+      padding-right: 80px; } }
+  @media screen and (min-width: 1280px) {
+    .container-portfolio .right {
+      order: 2;
+      width: 40%; } }
 
 .button {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
   @media screen and (min-width: 992px) {
     .button {
       text-align: left; } }
@@ -375,10 +405,9 @@ nav {
     background: #42BDE2;
     color: #fff;
     border: none;
-    padding: 11px 70px 14px 70px;
+    padding: 14px 70px 14px 70px;
     max-width: 270px;
     max-height: 50px;
-    margin-top: 30px;
     cursor: pointer;
     text-align: center; }
     .button .cta:hover, .button .cta:focus {
