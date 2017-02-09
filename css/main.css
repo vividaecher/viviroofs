@@ -366,31 +366,65 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 80px; }
+  padding-bottom: 110px; }
   .container-portfolio:first-child {
-    padding-top: 130px; }
+    padding-top: 150px; }
+    @media screen and (min-width: 768px) {
+      .container-portfolio:first-child {
+        padding-top: 210px; } }
+    @media screen and (min-width: 992px) {
+      .container-portfolio:first-child {
+        padding-top: 270px; } }
+    @media screen and (min-width: 1280px) {
+      .container-portfolio:first-child {
+        padding-top: 220px; } }
     @media screen and (min-width: 1920px) {
       .container-portfolio:first-child {
         padding-top: 280px; } }
+    @media screen and (min-width: 2000px) {
+      .container-portfolio:first-child {
+        padding-top: 300px; } }
+  @media screen and (min-width: 768px) {
+    .container-portfolio {
+      padding-bottom: 180px; } }
+  @media screen and (min-width: 992px) {
+    .container-portfolio {
+      padding-bottom: 280px; } }
   @media screen and (min-width: 1280px) {
     .container-portfolio {
-      flex-wrap: nowrap;
-      flex-direction: row; } }
+      padding-bottom: 150px; } }
   @media screen and (min-width: 1920px) {
     .container-portfolio {
+      flex-wrap: nowrap;
+      flex-direction: row;
       padding-bottom: 200px; } }
+  @media screen and (min-width: 2000px) {
+    .container-portfolio {
+      padding-bottom: 340px; } }
   .container-portfolio h1 {
     padding: 10px 0;
-    text-align: left;
-    font-size: 3.5rem; }
+    text-align: center;
+    font-size: 2rem; }
+    @media screen and (min-width: 768px) {
+      .container-portfolio h1 {
+        text-align: left;
+        font-size: 3.5rem; } }
   .container-portfolio h2 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: left; }
   @media screen and (min-width: 1280px) {
+    .container-portfolio .left {
+      width: 70%;
+      align-self: center; } }
+  @media screen and (min-width: 1920px) {
     .container-portfolio .left {
       order: 1;
       width: 60%;
       padding-right: 80px; } }
   @media screen and (min-width: 1280px) {
+    .container-portfolio .right {
+      width: 100%; } }
+  @media screen and (min-width: 1920px) {
     .container-portfolio .right {
       order: 2;
       width: 40%; } }

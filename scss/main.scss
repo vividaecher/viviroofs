@@ -522,37 +522,78 @@ img {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      padding-bottom: 80px;
+      padding-bottom: 110px;
 
         &:first-child {
-          padding-top: 130px;
+          padding-top: 150px;
+
+          @media screen and (min-width: $screen-tablet) {
+              padding-top: 210px;
+          }
+
+          @media screen and (min-width: $screen-laptop) {
+              padding-top: 270px;
+          }
+
+          @media screen and (min-width: $screen-desktop) {
+              padding-top: 220px;
+          }
 
           @media screen and (min-width: $screen-hd) {
               padding-top: 280px;
           }
+
+          @media screen and (min-width: $screen-tv) {
+              padding-top: 300px;
+          }
         }
 
+      @media screen and (min-width: $screen-tablet) {
+          padding-bottom: 180px;
+      }
+
+      @media screen and (min-width: $screen-laptop) {
+          padding-bottom: 280px;
+      }
+
       @media screen and (min-width: $screen-desktop) {
-          flex-wrap: nowrap;
-          flex-direction: row;
+          padding-bottom: 150px;
       }
 
       @media screen and (min-width: $screen-hd) {
+          flex-wrap: nowrap;
+          flex-direction: row;
           padding-bottom: 200px;
+      }
+
+      @media screen and (min-width: $screen-tv) {
+          padding-bottom: 340px;
       }
 
       h1 {
         padding: 10px 0;
-        text-align: left;
-        font-size: $headline-medium;
+        text-align: center;
+        font-size: $sub-headline-medium;
+
+        @media screen and (min-width: $screen-tablet) {
+          text-align: left;
+          font-size: $headline-medium;
+        }
+
       }
 
       h2 {
         font-size: $sub-headline;
+        text-align: left;
       }
 
       .left {
         @media screen and (min-width: $screen-desktop) {
+          width: 70%;
+          align-self: center;
+        }
+
+        @media screen and (min-width: $screen-hd) {
           order: 1;
           width: 60%;
           padding-right: 80px;
@@ -561,6 +602,10 @@ img {
 
       .right{
         @media screen and (min-width: $screen-desktop) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: $screen-hd) {
           order: 2;
           width: 40%;
         }
