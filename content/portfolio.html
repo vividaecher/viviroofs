@@ -19,6 +19,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" type="text/css" href="../scss/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../scss/swipebox.css">
 </head>
 <body class="sub-pages">
   <header>
@@ -189,6 +190,9 @@
                   <h2>2015, Schulprojekt</h2>
                   <p>Eine Webseite, auf der Touristen der Stadt Düsseldorf die Möglichkeit haben, sich über Sehenswürdigkeiten in Düsseldorf zu informieren. Zudem kann der User über eine Map und eine Art “Rundgang” immer herausfinden, wie er von einem zum nächsten “HotSpot” gelangt.</p>
                   <p><span>Design, Konzept, Text, Fotos</span></p>
+                  <div class="button">
+                    <a href="../img/portfolio/test.jpg" class="swipebox cta" title="My Caption">Zum Projekt</a>
+                  </div>
                 </div>
               </section>
 
@@ -236,5 +240,12 @@
   </div>
   <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../js/init.js" type="text/javascript"></script>
+  <script src="../js/jquery.swipebox.js"></script>
+  <script type="text/javascript">
+  	$( document ).ready(function() {
+
+      $( '.swipebox' ).swipebox();
+    });
+  	</script>
 </body>
 </html>
