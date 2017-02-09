@@ -361,6 +361,8 @@ nav {
     .container .right {
       order: 2;
       width: 40%; } }
+  .container .right .alignment {
+    padding-top: 55px; }
 
 .container-portfolio {
   display: flex;
@@ -413,19 +415,19 @@ nav {
     font-size: 1.5rem;
     text-align: left; }
   @media screen and (min-width: 1280px) {
-    .container-portfolio .left {
+    .container-portfolio .left-portfolio {
       width: 70%;
       align-self: center; } }
   @media screen and (min-width: 1920px) {
-    .container-portfolio .left {
+    .container-portfolio .left-portfolio {
       order: 1;
       width: 60%;
       padding-right: 80px; } }
   @media screen and (min-width: 1280px) {
-    .container-portfolio .right {
+    .container-portfolio .right-portfolio {
       width: 100%; } }
   @media screen and (min-width: 1920px) {
-    .container-portfolio .right {
+    .container-portfolio .right-portfolio {
       order: 2;
       width: 40%; } }
 
