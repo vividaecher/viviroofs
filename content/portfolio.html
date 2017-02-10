@@ -191,8 +191,13 @@
                   <p>Eine Webseite, auf der Touristen der Stadt Düsseldorf die Möglichkeit haben, sich über Sehenswürdigkeiten in Düsseldorf zu informieren. Zudem kann der User über eine Map und eine Art “Rundgang” immer herausfinden, wie er von einem zum nächsten “HotSpot” gelangt.</p>
                   <p><span>Design, Konzept, Text, Fotos</span></p>
                   <div class="button">
-                    <a href="../img/portfolio/test.jpg" class="swipebox cta" title="My Caption">Zum Projekt</a>
-                  </div>
+                    <a href="#image1" class="cta">Zum Projekt</a>
+                    <div class="lightbox short-animate" id="image1">
+                      <img class="long-animate" src="../img/test.jpg"/>
+                    </div>
+                    <div id="lightbox-controls" class="short-animate">
+                      <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+                    </div>
                 </div>
               </section>
 
@@ -240,12 +245,5 @@
   </div>
   <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../js/init.js" type="text/javascript"></script>
-  <script src="../js/jquery.swipebox.js"></script>
-  <script type="text/javascript">
-  	$( document ).ready(function() {
-
-      $( '.swipebox' ).swipebox();
-    });
-  	</script>
 </body>
 </html>
