@@ -517,7 +517,11 @@ img {
         }
 
         .alignment {
-          padding-top: 55px;
+          padding-top: 0;
+
+          @media screen and (min-width: $screen-desktop) {
+            padding-top: 55px;
+          }
         }
       }
     }
