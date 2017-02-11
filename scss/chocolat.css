@@ -11,7 +11,7 @@
     left:0;
     top:0;
     z-index:10;
-    background-color:#fff;
+    background-color:#010b16;
     display:none;
     opacity: 0.8;
 }
@@ -95,6 +95,7 @@
     overflow: hidden;
     z-index: 17;
     margin-bottom: 10px;
+    background: #010b16;
 }
 .chocolat-wrapper .chocolat-close{
     width:50px;
@@ -116,7 +117,7 @@
     z-index: 17;
     padding-left: 15px;
     padding-right: 15px;
-    background: rgba(0, 0, 0, 0.2);
+    background: #010b16;
     text-align: right;
     margin-top: 10px;
 }
@@ -170,7 +171,7 @@ body.chocolat-open>.chocolat-content{
 }
 
 /* uncomment to hide controls when zoomed-in*/
-/*
+
 .chocolat-zoomable .chocolat-top,
 .chocolat-zoomable .chocolat-bottom,
 .chocolat-zoomable .chocolat-right,
@@ -186,4 +187,3 @@ body.chocolat-open>.chocolat-content{
     visibility: hidden;
     opacity: 0;
 }
-*/
