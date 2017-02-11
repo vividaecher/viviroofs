@@ -19,7 +19,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" type="text/css" href="../scss/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="../scss/swipebox.css">
+  <link rel="stylesheet" type="text/css" href="../scss/chocolat.css">
 </head>
 <body class="sub-pages">
   <header>
@@ -191,7 +191,10 @@
                   <p>Eine Webseite, auf der Touristen der Stadt Düsseldorf die Möglichkeit haben, sich über Sehenswürdigkeiten in Düsseldorf zu informieren. Zudem kann der User über eine Map und eine Art “Rundgang” immer herausfinden, wie er von einem zum nächsten “HotSpot” gelangt.</p>
                   <p><span>Design, Konzept, Text, Fotos</span></p>
                   <div class="button">
-                    <a class="cta" href="https://www.sipgateteam.de/gsuite" title="Zur Landingpage von sipgate team for G Suite" target="_blank">Zum Projekt</a>
+                    <div class="chocolat-parent" data-chocolat-title="set title">
+                        <a class="cta chocolat-image" href="../img/test.jpg" title="caption image 1">Zum Projekt</a>
+                        <a class="chocolat-image" href="../img/portfolio/case3.png" title="caption image 2"></a>
+                    </div>
                   </div>
               </section>
 
@@ -239,5 +242,11 @@
   </div>
   <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../js/init.js" type="text/javascript"></script>
+  <script src="../js/jquery.chocolat.js" type="text/javascript"></script>
+  <script>
+  $(document).ready(function(){
+      $('.chocolat-parent').Chocolat();
+  });
+  </script>
 </body>
 </html>
