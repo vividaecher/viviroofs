@@ -144,20 +144,15 @@ a {
 	}
 }
 
-header {
-  background: $primary-color;
+header, .header {
   padding: 20px;
-  position: fixed;
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
+  background: transparent;
 
   @media screen and (min-width: $screen-laptop) {
     padding: 30px 120px 30px 120px
-  }
-
-  @media screen and (min-width: $screen-desktop) {
-    background: transparent;
   }
 
   @media screen and (min-width: $screen-tv) {
@@ -185,6 +180,16 @@ header {
   }
 }
 
+.header {
+  background: $primary-color;
+  position: fixed;
+}
+
+.active {
+  background: $primary-color;
+  position: fixed;
+}
+
 .wrapper {
   margin-left: 20px;
   margin-right: 20px;
@@ -200,6 +205,23 @@ header {
   }
 }
 
+.wrapper-start {
+  background: $white;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $screen-laptop) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  @media screen and (min-width: $screen-tv) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -211,16 +233,10 @@ img {
       min-height: 100%;
       align-items: flex-end;
       position: relative;
-      top: 55px;
-
-      @media screen and (min-width: $screen-tablet) {
-        top: 100px;
-      }
 
       @media screen and (min-width: $screen-desktop) {
         flex-direction: row;
         flex-wrap: nowrap;
-        top:0;
       }
 
         .start-headline {
@@ -480,6 +496,21 @@ img {
 
       h1 {
         margin: 0;
+      }
+    }
+
+    .heading-start {
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+      @media screen and (min-width: $screen-tablet) {
+        padding-top: 70px;
+        padding-bottom: 30px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+        padding-top: 90px;
+        padding-bottom: 60px
       }
     }
 

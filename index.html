@@ -146,7 +146,33 @@
           </div>
         </section>
   </div>
+  <div class="wrapper-start">
+    <div class="heading-start">
+      <h1>Schön, dass Du da bist!</h1>
+    </div>
+    <section class="container">
+      <div class="right">
+
+      </div>
+      <div class="left">
+        <p>Super, dass Du den Weg zu meinem Portfolio gefunden hast. Ich bin angehende Mediengestalterin Digital und Print, Fachrichtung Gestaltung &amp; Technik mit dem Schwerpunkt “digital”. Ich bin auf der Suche nach neuen Herausforderungen und einem Weg, meine Skills weiterentwickeln zu können. </p>
+        <p>Während meiner Ausbildung konnte ich Erfahrungen in verschiedenen Bereichen der digitalen Welt sammeln. Neben der Erstellung von Konzepten, vielen Wireframes und Prototypen, habe ich meine Fähigkeiten in den Bereichen der User Experience und des User Interface Designs entwickelt. Dazu gehört auch das Coden von responsiven Webseiten via HTML5, CSS3, JavaScript und Git.</p>
+      </div>
+    </section>
+  </div>
   <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="js/init.js" type="text/javascript"></script>
+
+  <script>
+  $(window).scroll(function(e){
+    var amount = $(window).scrollTop();
+
+    if( amount > 50 ){
+      $('header').addClass('active');
+    }else {
+      $('header').removeClass('active');
+    }
+  });
+  </script>
 </body>
 </html>
