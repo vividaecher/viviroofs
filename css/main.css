@@ -362,7 +362,10 @@ nav {
       order: 2;
       width: 40%; } }
   .container .right .alignment {
-    padding-top: 55px; }
+    padding-top: 0; }
+    @media screen and (min-width: 1280px) {
+      .container .right .alignment {
+        padding-top: 55px; } }
 
 .container-portfolio {
   display: flex;
