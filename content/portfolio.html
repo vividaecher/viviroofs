@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="../scss/chocolat.css">
 </head>
 <body class="sub-pages">
-  <div class="header">
+  <header>
     <nav>
       <button class="navbar-toggle">
         <span class="line"></span>
@@ -127,7 +127,7 @@
     		</g>
       </svg>
     </a>
-  </div>
+  </header>
   <div class="wrapper">
 
         <section class="container-portfolio">
@@ -252,6 +252,16 @@
   <script>
   $(document).ready(function(){
       $('.chocolat-parent').Chocolat();
+  });
+
+  $(window).scroll(function(e){
+    var amount = $(window).scrollTop();
+
+    if( amount > 100 ){
+      $('.logo').addClass('color');
+    }else {
+      $('.logo').removeClass('color');
+    }
   });
   </script>
 </body>

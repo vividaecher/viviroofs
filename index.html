@@ -158,10 +158,10 @@
   $(window).scroll(function(e){
     var amount = $(window).scrollTop();
 
-    if( amount > 1 ){
-      $('header').addClass('active');
+    if( amount > 100 ){
+      $('.logo').addClass('color');
     }else {
-      $('header').removeClass('active');
+      $('.logo').removeClass('color');
     }
   });
   </script>

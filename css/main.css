@@ -91,34 +91,33 @@ a {
   a:hover, a:focus {
     color: #20a8d1; }
 
-header, .header {
+header {
   padding: 20px;
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
-  background: transparent;
+  background: #010b16;
   position: fixed; }
   @media screen and (min-width: 992px) {
-    header, .header {
+    header {
       padding: 30px 120px 30px 120px; } }
   @media screen and (min-width: 2000px) {
-    header, .header {
+    header {
       padding-left: 250px;
       padding-right: 250px; } }
-  header svg, .header svg {
+  header svg {
     width: 80px;
     max-width: 100%; }
     @media screen and (min-width: 768px) {
-      header svg, .header svg {
+      header svg {
         width: 100px; } }
-  header .logo, .header .logo {
+  header .logo {
     fill: #fff; }
     @media screen and (min-width: 992px) {
-      header .logo:hover, header .logo:focus, .header .logo:hover, .header .logo:focus {
+      header .logo:hover, header .logo:focus {
         fill: #42BDE2; } }
-
-.active, .header {
-  background: #010b16; }
+  header .color {
+    fill: #42BDE2; }
 
 .wrapper {
   margin-left: 20px;
@@ -189,7 +188,7 @@ img {
     @media screen and (min-width: 1280px) {
       .container-start .start-img {
         width: 70%;
-        margin-top: 150px; } }
+        margin-top: 190px; } }
     @media screen and (min-width: 2000px) {
       .container-start .start-img {
         width: 60%;
