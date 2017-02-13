@@ -45,16 +45,12 @@ body {
 	}
 }
 
-html, body, .wrapper {
+html, body {
   height: 100%;
 }
 
 .sub-pages {
   background: $white;
-
-  header {
-    background: $primary-color;
-  }
 
 }
 
@@ -150,6 +146,7 @@ header, .header {
   width: 100%;
   box-sizing: border-box;
   background: transparent;
+  position: fixed;
 
   @media screen and (min-width: $screen-laptop) {
     padding: 30px 120px 30px 120px
@@ -180,19 +177,14 @@ header, .header {
   }
 }
 
-.header {
+.active, .header {
   background: $primary-color;
-  position: fixed;
-}
-
-.active {
-  background: $primary-color;
-  position: fixed;
 }
 
 .wrapper {
   margin-left: 20px;
   margin-right: 20px;
+  min-height: 100%;
 
   @media screen and (min-width: $screen-laptop) {
     margin-left: 120px;
@@ -247,6 +239,7 @@ img {
           text-align: center;
           justify-content: center;
           z-index: 1;
+          margin-top: 150px;
 
           h1 {
             color: $white;
@@ -256,6 +249,7 @@ img {
             align-self: center;
             flex-direction: row;
             width: 30%;
+            margin-top: 85px;
 
             h1 {
               margin-right: -195px;
@@ -270,13 +264,16 @@ img {
 
         .start-img {
           width: 100%;
+          margin-top: 125px;
 
             @media screen and (min-width: $screen-desktop) {
               width: 70%;
+              margin-top: 150px;
             }
 
             @media screen and (min-width: $screen-tv) {
               width: 60%;
+              margin-top: 320px;
             }
           }
     }

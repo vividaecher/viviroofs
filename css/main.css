@@ -19,13 +19,11 @@ body {
     body.navigation-open .wrapper, body.navigation-open nav, body.navigation-open header {
       height: 100%; }
 
-html, body, .wrapper {
+html, body {
   height: 100%; }
 
 .sub-pages {
   background: #fff; }
-  .sub-pages header {
-    background: #010b16; }
 
 @font-face {
   font-family: 'montserratregular';
@@ -98,7 +96,8 @@ header, .header {
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
-  background: transparent; }
+  background: transparent;
+  position: fixed; }
   @media screen and (min-width: 992px) {
     header, .header {
       padding: 30px 120px 30px 120px; } }
@@ -118,17 +117,13 @@ header, .header {
       header .logo:hover, header .logo:focus, .header .logo:hover, .header .logo:focus {
         fill: #42BDE2; } }
 
-.header {
-  background: #010b16;
-  position: fixed; }
-
-.active {
-  background: #010b16;
-  position: fixed; }
+.active, .header {
+  background: #010b16; }
 
 .wrapper {
   margin-left: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  min-height: 100%; }
   @media screen and (min-width: 992px) {
     .wrapper {
       margin-left: 120px;
@@ -172,14 +167,16 @@ img {
     flex-grow: 1;
     text-align: center;
     justify-content: center;
-    z-index: 1; }
+    z-index: 1;
+    margin-top: 150px; }
     .container-start .start-headline h1 {
       color: #fff; }
     @media screen and (min-width: 1280px) {
       .container-start .start-headline {
         align-self: center;
         flex-direction: row;
-        width: 30%; }
+        width: 30%;
+        margin-top: 85px; }
         .container-start .start-headline h1 {
           margin-right: -195px;
           text-align: left; } }
@@ -187,13 +184,16 @@ img {
       .container-start .start-headline {
         width: 40%; } }
   .container-start .start-img {
-    width: 100%; }
+    width: 100%;
+    margin-top: 125px; }
     @media screen and (min-width: 1280px) {
       .container-start .start-img {
-        width: 70%; } }
+        width: 70%;
+        margin-top: 150px; } }
     @media screen and (min-width: 2000px) {
       .container-start .start-img {
-        width: 60%; } }
+        width: 60%;
+        margin-top: 320px; } }
 
 nav {
   background-color: #010b16; }
