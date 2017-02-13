@@ -116,7 +116,7 @@ header {
     @media screen and (min-width: 992px) {
       header .logo:hover, header .logo:focus {
         fill: #42BDE2; } }
-  header .color {
+  header .color-logo {
     fill: #42BDE2; }
 
 .wrapper {
@@ -228,6 +228,8 @@ nav {
     right: 20px;
     width: 45px;
     height: 43px; }
+    nav .navbar-toggle.color-navbar {
+      border: solid 3px #42BDE2; }
     @media screen and (min-width: 992px) {
       nav .navbar-toggle {
         right: 120px;
@@ -260,6 +262,8 @@ nav {
       background-color: #fff;
       margin-bottom: 4px;
       transition: all .3s ease; }
+      nav .navbar-toggle span.color-span {
+        background-color: #42BDE2; }
     nav .navbar-toggle span:nth-child(1) {
       width: 25px; }
     nav .navbar-toggle span:nth-child(2) {

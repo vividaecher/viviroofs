@@ -176,7 +176,7 @@ header {
     }
   }
 
-  .color {
+  .color-logo {
     fill: $secondary-color;
   }
 }
@@ -322,6 +322,10 @@ img {
         width: 45px;
         height: 43px;
 
+        &.color-navbar {
+          border: solid 3px $secondary-color;
+        }
+
 
         @media screen and (min-width: $screen-laptop) {
           right: 120px;
@@ -366,6 +370,10 @@ img {
     			background-color: $white;
     			margin-bottom: 4px;
     			transition: all .3s ease;
+
+          &.color-span {
+            background-color: $secondary-color;
+          }
     		}
 
     		span:nth-child(1) {
