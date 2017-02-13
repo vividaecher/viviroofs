@@ -26,7 +26,3 @@ $(window).scroll(function(e){
     $('.navbar-toggle span').removeClass('color-span');
   }
 });
-
-$(document).ready(function(){
-    $('.chocolat-parent').Chocolat();
-});
