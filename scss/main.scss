@@ -283,7 +283,18 @@ img {
               margin-top: 320px;
             }
           }
-    }
+          svg {
+            display: none;
+
+            @media screen and (min-width: $screen-tablet) {
+              width: 50px;
+              bottom: 80px;
+              right: 50%;
+              position: absolute;
+              display: block;
+            }
+          }
+        }
 
     nav {
     	background-color: $primary-color;
