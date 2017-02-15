@@ -543,7 +543,8 @@ nav {
       width: 100%; } }
 
 .skills svg {
-  width: 50px; }
+  width: 30px;
+  padding-right: 15px; }
   .skills svg .fill {
     fill: #42BDE2; }
   .skills svg .stroke {

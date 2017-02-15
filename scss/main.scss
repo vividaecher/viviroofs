@@ -343,7 +343,6 @@ img {
           border: solid 3px $secondary-color;
         }
 
-
         @media screen and (min-width: $screen-laptop) {
           right: 120px;
           top: 35px;
@@ -752,7 +751,7 @@ img {
       display: flex;
       flex-direction: column;
 
-      @media screen and (min-width: $screen-tablet) {        
+      @media screen and (min-width: $screen-tablet) {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
@@ -763,7 +762,8 @@ img {
     .skills {
 
       svg {
-        width: 50px;
+        width: 30px;
+        padding-right: 15px;
 
         .fill {
           fill: $secondary-color;
@@ -775,8 +775,5 @@ img {
           stroke-width: 3;
           stroke-miterlimit: 10;
         }
-      }
-
-      .ux {
       }
     }
