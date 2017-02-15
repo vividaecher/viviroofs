@@ -117,11 +117,17 @@ h2 {
   }
 }
 
+h3 {
+  font-size: $fliestext;
+  color: $secondary-color;
+  font-family: 'montserratbold', sans-serif;
+}
+
 p {
   font-size: $fliestext;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: 0;
-  line-height: 35px;
+  line-height: 40px;
 
   strong {
     color: $secondary-color;
@@ -540,24 +546,43 @@ img {
       }
 
       .left {
+        width: 100%;
+
         @media screen and (min-width: $screen-desktop) {
-          order: 1;
-          width: 60%;
+          width: 50%;
           padding-right: 80px;
+
         }
       }
 
       .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+
+
+        @media screen and (min-width: $screen-tablet) {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+
+        @media screen and (min-width: $screen-laptop) {
+          align-items: center;
+        }
+
         @media screen and (min-width: $screen-desktop) {
-          order: 2;
-          width: 40%;
+          width: 50%;
+          flex-direction: column;
+          order: 1;
         }
 
         .alignment {
           padding-top: 0;
 
           @media screen and (min-width: $screen-desktop) {
-            padding-top: 55px;
+            padding-top: 38px;
           }
         }
       }
@@ -634,7 +659,7 @@ img {
 
       .left-portfolio {
         @media screen and (min-width: $screen-desktop) {
-          width: 70%;
+          width: 60%;
           align-self: center;
         }
 
@@ -646,6 +671,9 @@ img {
       }
 
       .right-portfolio {
+        display: flex;
+        flex-direction: column;
+
         @media screen and (min-width: $screen-desktop) {
           width: 100%;
         }
@@ -655,27 +683,56 @@ img {
           width: 40%;
         }
       }
-    }
 
-    .button {
-      text-align: center;
-      margin-top: 30px;
-
-      @media screen and (min-width: $screen-laptop) {
+      .cta-button {
         text-align: left;
       }
-      .cta {
-          background: $secondary-color;
-          color: #fff;
-          border: none;
-          padding: 14px 70px 14px 70px;
-          max-width: 270px;
-          max-height: 50px;
-          cursor: pointer;
-          text-align: center;
+    }
 
-          &:hover, &:focus {
-            background: darken($secondary-color, 10%);
-          }
+    .cta-button {
+      text-align: center;
+
+
+      @media screen and (min-width: $screen-tablet) {
+        margin-right: 30px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+        margin-right: 0;
+      }
+
+      .cta{
+        background: $secondary-color;
+        border: none;
+        padding: 14px 70px;
+        cursor: pointer;
+        text-align: center;
+        color: $white;
+      }
+
+      /*&:hover, &:focus {
+        background: darken($secondary-color, 10%);
+      }*/
+    }
+
+    .ghost-button {
+      text-align: center;
+      margin-top: 50px;
+
+      @media screen and (min-width: $screen-tablet) {
+        margin-top: 0;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+        margin-top: 50px;
+      }
+
+      .ghost {
+        background: $white;
+        border: solid 3px $secondary-color;
+        cursor: pointer;
+        text-align: center;
+        color: $secondary-color;
+        padding: 12px 100px;
       }
     }

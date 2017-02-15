@@ -74,11 +74,16 @@ h2 {
       text-align: left;
       font-size: 2rem; } }
 
+h3 {
+  font-size: 1.325rem;
+  color: #42BDE2;
+  font-family: 'montserratbold', sans-serif; }
+
 p {
   font-size: 1.325rem;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: 0;
-  line-height: 35px; }
+  line-height: 40px; }
   p strong {
     color: #42BDE2; }
   p span {
@@ -378,20 +383,35 @@ nav {
     .container {
       flex-wrap: nowrap;
       flex-direction: row; } }
-  @media screen and (min-width: 1280px) {
-    .container .left {
-      order: 1;
-      width: 60%;
-      padding-right: 80px; } }
-  @media screen and (min-width: 1280px) {
-    .container .right {
-      order: 2;
-      width: 40%; } }
-  .container .right .alignment {
-    padding-top: 0; }
+  .container .left {
+    width: 100%; }
     @media screen and (min-width: 1280px) {
-      .container .right .alignment {
-        padding-top: 55px; } }
+      .container .left {
+        width: 50%;
+        padding-right: 80px; } }
+  .container .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center; }
+    @media screen and (min-width: 768px) {
+      .container .right {
+        flex-direction: row;
+        justify-content: flex-start; } }
+    @media screen and (min-width: 992px) {
+      .container .right {
+        align-items: center; } }
+    @media screen and (min-width: 1280px) {
+      .container .right {
+        width: 50%;
+        flex-direction: column;
+        order: 1; } }
+    .container .right .alignment {
+      padding-top: 0; }
+      @media screen and (min-width: 1280px) {
+        .container .right .alignment {
+          padding-top: 38px; } }
 
 .container-portfolio {
   display: flex;
@@ -445,37 +465,60 @@ nav {
     text-align: left; }
   @media screen and (min-width: 1280px) {
     .container-portfolio .left-portfolio {
-      width: 70%;
+      width: 60%;
       align-self: center; } }
   @media screen and (min-width: 1920px) {
     .container-portfolio .left-portfolio {
       order: 1;
       width: 60%;
       padding-right: 80px; } }
-  @media screen and (min-width: 1280px) {
-    .container-portfolio .right-portfolio {
-      width: 100%; } }
-  @media screen and (min-width: 1920px) {
-    .container-portfolio .right-portfolio {
-      order: 2;
-      width: 40%; } }
+  .container-portfolio .right-portfolio {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 1280px) {
+      .container-portfolio .right-portfolio {
+        width: 100%; } }
+    @media screen and (min-width: 1920px) {
+      .container-portfolio .right-portfolio {
+        order: 2;
+        width: 40%; } }
+  .container-portfolio .cta-button {
+    text-align: left; }
 
-.button {
+.cta-button {
   text-align: center;
-  margin-top: 30px; }
-  @media screen and (min-width: 992px) {
-    .button {
-      text-align: left; } }
-  .button .cta {
+  /*&:hover, &:focus {
+        background: darken($secondary-color, 10%);
+      }*/ }
+  @media screen and (min-width: 768px) {
+    .cta-button {
+      margin-right: 30px; } }
+  @media screen and (min-width: 1280px) {
+    .cta-button {
+      margin-right: 0; } }
+  .cta-button .cta {
     background: #42BDE2;
-    color: #fff;
     border: none;
-    padding: 14px 70px 14px 70px;
-    max-width: 270px;
-    max-height: 50px;
+    padding: 14px 70px;
     cursor: pointer;
-    text-align: center; }
-    .button .cta:hover, .button .cta:focus {
-      background: #20a8d1; }
+    text-align: center;
+    color: #fff; }
+
+.ghost-button {
+  text-align: center;
+  margin-top: 50px; }
+  @media screen and (min-width: 768px) {
+    .ghost-button {
+      margin-top: 0; } }
+  @media screen and (min-width: 1280px) {
+    .ghost-button {
+      margin-top: 50px; } }
+  .ghost-button .ghost {
+    background: #fff;
+    border: solid 3px #42BDE2;
+    cursor: pointer;
+    text-align: center;
+    color: #42BDE2;
+    padding: 12px 100px; }
 
 /*# sourceMappingURL=main.css.map */
