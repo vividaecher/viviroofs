@@ -1,3 +1,5 @@
+@import 'sass-flex-mixin/_flex.scss';
+
 $primary-color: #010b16;
 $secondary-color: #42BDE2;
 $white: #fff;
@@ -184,7 +186,6 @@ header {
 .wrapper {
   margin-left: 20px;
   margin-right: 20px;
-  min-height: 100%;
 
   @media screen and (min-width: $screen-laptop) {
     margin-left: 120px;
@@ -264,11 +265,11 @@ img {
 
         .start-img {
           width: 100%;
-          margin-top: 125px;
+          margin-top: 55px;
 
             @media screen and (min-width: $screen-desktop) {
               width: 70%;
-              margin-top: 190px;
+              margin-top: 130px;
             }
 
             @media screen and (min-width: $screen-tv) {

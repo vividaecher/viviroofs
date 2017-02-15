@@ -121,8 +121,7 @@ header {
 
 .wrapper {
   margin-left: 20px;
-  margin-right: 20px;
-  min-height: 100%; }
+  margin-right: 20px; }
   @media screen and (min-width: 992px) {
     .wrapper {
       margin-left: 120px;
@@ -184,11 +183,11 @@ img {
         width: 40%; } }
   .container-start .start-img {
     width: 100%;
-    margin-top: 125px; }
+    margin-top: 55px; }
     @media screen and (min-width: 1280px) {
       .container-start .start-img {
         width: 70%;
-        margin-top: 190px; } }
+        margin-top: 130px; } }
     @media screen and (min-width: 2000px) {
       .container-start .start-img {
         width: 60%;
