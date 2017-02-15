@@ -139,7 +139,8 @@ header {
 .wrapper-start {
   background: #fff;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  min-height: 100%; }
   @media screen and (min-width: 992px) {
     .wrapper-start {
       padding-left: 120px;
@@ -481,12 +482,14 @@ nav {
     @media screen and (min-width: 1920px) {
       .container-portfolio .right-portfolio {
         order: 2;
-        width: 40%; } }
+        width: 40%;
+        margin-top: 45px; } }
   .container-portfolio .cta-button {
     text-align: left; }
 
 .cta-button {
   text-align: center;
+  width: 100%;
   /*&:hover, &:focus {
         background: darken($secondary-color, 10%);
       }*/ }
@@ -499,10 +502,10 @@ nav {
   .cta-button .cta {
     background: #42BDE2;
     border: none;
-    padding: 14px 70px;
     cursor: pointer;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    padding: 10px 55px; }
 
 .ghost-button {
   text-align: center;
@@ -519,6 +522,6 @@ nav {
     cursor: pointer;
     text-align: center;
     color: #42BDE2;
-    padding: 12px 100px; }
+    padding: 8px 85px; }
 
 /*# sourceMappingURL=main.css.map */

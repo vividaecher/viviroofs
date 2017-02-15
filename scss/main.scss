@@ -206,9 +206,9 @@ header {
 
 .wrapper-start {
   background: $white;
-
   padding-left: 20px;
   padding-right: 20px;
+  min-height: 100%;
 
   @media screen and (min-width: $screen-laptop) {
     padding-left: 120px;
@@ -681,6 +681,7 @@ img {
         @media screen and (min-width: $screen-hd) {
           order: 2;
           width: 40%;
+          margin-top: 45px;
         }
       }
 
@@ -691,7 +692,7 @@ img {
 
     .cta-button {
       text-align: center;
-
+      width: 100%;
 
       @media screen and (min-width: $screen-tablet) {
         margin-right: 30px;
@@ -701,13 +702,13 @@ img {
         margin-right: 0;
       }
 
-      .cta{
+      .cta {
         background: $secondary-color;
         border: none;
-        padding: 14px 70px;
         cursor: pointer;
         text-align: center;
         color: $white;
+        padding: 10px 55px;
       }
 
       /*&:hover, &:focus {
@@ -733,6 +734,6 @@ img {
         cursor: pointer;
         text-align: center;
         color: $secondary-color;
-        padding: 12px 100px;
+        padding: 8px 85px;
       }
     }
