@@ -208,7 +208,6 @@ header {
   background: $white;
   padding-left: 20px;
   padding-right: 20px;
-  min-height: 100%;
 
   @media screen and (min-width: $screen-laptop) {
     padding-left: 120px;
@@ -735,5 +734,38 @@ img {
         text-align: center;
         color: $secondary-color;
         padding: 8px 85px;
+      }
+    }
+
+    .container-skill {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: $screen-tablet) {        
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    .skills {
+
+      svg {
+        width: 50px;
+
+        .fill {
+          fill: $secondary-color;
+        }
+
+        .stroke {
+          stroke: $secondary-color;
+          fill: none;
+          stroke-width: 3;
+          stroke-miterlimit: 10;
+        }
+      }
+
+      .ux {
       }
     }

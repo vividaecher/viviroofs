@@ -139,8 +139,7 @@ header {
 .wrapper-start {
   background: #fff;
   padding-left: 20px;
-  padding-right: 20px;
-  min-height: 100%; }
+  padding-right: 20px; }
   @media screen and (min-width: 992px) {
     .wrapper-start {
       padding-left: 120px;
@@ -523,5 +522,25 @@ nav {
     text-align: center;
     color: #42BDE2;
     padding: 8px 85px; }
+
+.container-skill {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .container-skill {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%; } }
+
+.skills svg {
+  width: 50px; }
+  .skills svg .fill {
+    fill: #42BDE2; }
+  .skills svg .stroke {
+    stroke: #42BDE2;
+    fill: none;
+    stroke-width: 3;
+    stroke-miterlimit: 10; }
 
 /*# sourceMappingURL=main.css.map */
