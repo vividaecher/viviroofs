@@ -122,7 +122,8 @@ header {
       header .logo:hover, header .logo:focus {
         fill: #42BDE2; } }
   header .color-logo {
-    fill: #42BDE2; }
+    fill: #42BDE2;
+    transition: all ease .5s; }
 
 .wrapper {
   margin-left: 20px;
@@ -243,7 +244,8 @@ nav {
     width: 45px;
     height: 43px; }
     nav .navbar-toggle.color-navbar {
-      border: solid 3px #42BDE2; }
+      border: solid 3px #42BDE2;
+      transition: all ease .5s; }
     @media screen and (min-width: 992px) {
       nav .navbar-toggle {
         right: 120px;
@@ -277,7 +279,8 @@ nav {
       margin-bottom: 4px;
       transition: all .3s ease; }
       nav .navbar-toggle span.color-span {
-        background-color: #42BDE2; }
+        background-color: #42BDE2;
+        transition: all ease .5s; }
     nav .navbar-toggle span:nth-child(1) {
       width: 25px; }
     nav .navbar-toggle span:nth-child(2) {
@@ -498,10 +501,7 @@ nav {
 
 .cta-button {
   text-align: center;
-  width: 100%;
-  /*&:hover, &:focus {
-        background: darken($secondary-color, 10%);
-      }*/ }
+  width: 100%; }
   @media screen and (min-width: 768px) {
     .cta-button {
       margin-right: 30px; } }
@@ -515,6 +515,10 @@ nav {
     text-align: center;
     color: #fff;
     padding: 10px 55px; }
+    @media screen and (min-width: 992px) {
+      .cta-button .cta:hover, .cta-button .cta:focus {
+        background: #20a8d1;
+        transition: all ease .5s; } }
 
 .ghost-button {
   text-align: center;
@@ -532,5 +536,10 @@ nav {
     text-align: center;
     color: #42BDE2;
     padding: 8px 85px; }
+    @media screen and (min-width: 992px) {
+      .ghost-button .ghost:hover, .ghost-button .ghost:focus {
+        background: #42BDE2;
+        color: #fff;
+        transition: all ease 1s; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -186,6 +186,7 @@ header {
 
   .color-logo {
     fill: $secondary-color;
+    transition: all ease .5s;
   }
 }
 
@@ -342,6 +343,7 @@ img {
 
         &.color-navbar {
           border: solid 3px $secondary-color;
+          transition: all ease .5s;
         }
 
 
@@ -391,6 +393,7 @@ img {
 
           &.color-span {
             background-color: $secondary-color;
+            transition: all ease .5s;
           }
     		}
 
@@ -720,11 +723,14 @@ img {
         text-align: center;
         color: $white;
         padding: 10px 55px;
-      }
 
-      /*&:hover, &:focus {
-        background: darken($secondary-color, 10%);
-      }*/
+        @media screen and (min-width: $screen-laptop) {
+          &:hover, &:focus {
+            background: darken($secondary-color, 10%);
+            transition: all ease .5s;
+          }
+        }
+      }
     }
 
     .ghost-button {
@@ -746,5 +752,12 @@ img {
         text-align: center;
         color: $secondary-color;
         padding: 8px 85px;
+
+        @media screen and (min-width: $screen-laptop) {
+          &:hover, &:focus {
+            background: $secondary-color;
+            color: $white;transition: all ease 1s;
+          }
+        }
       }
     }
