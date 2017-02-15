@@ -47,16 +47,12 @@ body {
 	}
 }
 
-html, body, .wrapper {
+html, body {
   height: 100%;
 }
 
 .sub-pages {
   background: $white;
-
-  header {
-    background: $primary-color;
-  }
 
 }
 
@@ -121,11 +117,17 @@ h2 {
   }
 }
 
+h3 {
+  font-size: $fliestext;
+  color: $secondary-color;
+  font-family: 'montserratbold', sans-serif;
+}
+
 p {
   font-size: $fliestext;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: 0;
-  line-height: 35px;
+  line-height: 40px;
 
   strong {
     color: $secondary-color;
@@ -147,19 +149,15 @@ a {
 }
 
 header {
-  background: $primary-color;
   padding: 20px;
-  position: fixed;
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
+  background: $primary-color;
+  position: fixed;
 
   @media screen and (min-width: $screen-laptop) {
     padding: 30px 120px 30px 120px
-  }
-
-  @media screen and (min-width: $screen-desktop) {
-    background: transparent;
   }
 
   @media screen and (min-width: $screen-tv) {
@@ -185,6 +183,10 @@ header {
       }
     }
   }
+
+  .color-logo {
+    fill: $secondary-color;
+  }
 }
 
 .wrapper {
@@ -202,6 +204,23 @@ header {
   }
 }
 
+.wrapper-start {
+  background: $white;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100%;
+
+  @media screen and (min-width: $screen-laptop) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  @media screen and (min-width: $screen-tv) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -213,16 +232,10 @@ img {
       min-height: 100%;
       align-items: flex-end;
       position: relative;
-      top: 55px;
-
-      @media screen and (min-width: $screen-tablet) {
-        top: 100px;
-      }
 
       @media screen and (min-width: $screen-desktop) {
         flex-direction: row;
         flex-wrap: nowrap;
-        top:0;
       }
 
         .start-headline {
@@ -233,6 +246,7 @@ img {
           text-align: center;
           justify-content: center;
           z-index: 1;
+          margin-top: 150px;
 
           h1 {
             color: $white;
@@ -242,6 +256,7 @@ img {
             align-self: center;
             flex-direction: row;
             width: 30%;
+            margin-top: 85px;
 
             h1 {
               margin-right: -195px;
@@ -256,13 +271,16 @@ img {
 
         .start-img {
           width: 100%;
+          margin-top: 55px;
 
             @media screen and (min-width: $screen-desktop) {
               width: 70%;
+              margin-top: 130px;
             }
 
             @media screen and (min-width: $screen-tv) {
               width: 60%;
+              margin-top: 320px;
             }
           }
     }
@@ -311,6 +329,10 @@ img {
         width: 45px;
         height: 43px;
 
+        &.color-navbar {
+          border: solid 3px $secondary-color;
+        }
+
 
         @media screen and (min-width: $screen-laptop) {
           right: 120px;
@@ -355,6 +377,10 @@ img {
     			background-color: $white;
     			margin-bottom: 4px;
     			transition: all .3s ease;
+
+          &.color-span {
+            background-color: $secondary-color;
+          }
     		}
 
     		span:nth-child(1) {
@@ -485,6 +511,21 @@ img {
       }
     }
 
+    .heading-start {
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+      @media screen and (min-width: $screen-tablet) {
+        padding-top: 70px;
+        padding-bottom: 30px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+        padding-top: 90px;
+        padding-bottom: 60px
+      }
+    }
+
 
     .container {
       display: flex;
@@ -505,24 +546,43 @@ img {
       }
 
       .left {
+        width: 100%;
+
         @media screen and (min-width: $screen-desktop) {
-          order: 1;
-          width: 60%;
+          width: 50%;
           padding-right: 80px;
+
         }
       }
 
       .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+
+
+        @media screen and (min-width: $screen-tablet) {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+
+        @media screen and (min-width: $screen-laptop) {
+          align-items: center;
+        }
+
         @media screen and (min-width: $screen-desktop) {
-          order: 2;
-          width: 40%;
+          width: 50%;
+          flex-direction: column;
+          order: 1;
         }
 
         .alignment {
           padding-top: 0;
 
           @media screen and (min-width: $screen-desktop) {
-            padding-top: 55px;
+            padding-top: 38px;
           }
         }
       }
@@ -599,7 +659,7 @@ img {
 
       .left-portfolio {
         @media screen and (min-width: $screen-desktop) {
-          width: 70%;
+          width: 60%;
           align-self: center;
         }
 
@@ -611,6 +671,9 @@ img {
       }
 
       .right-portfolio {
+        display: flex;
+        flex-direction: column;
+
         @media screen and (min-width: $screen-desktop) {
           width: 100%;
         }
@@ -618,29 +681,59 @@ img {
         @media screen and (min-width: $screen-hd) {
           order: 2;
           width: 40%;
+          margin-top: 45px;
         }
+      }
+
+      .cta-button {
+        text-align: left;
       }
     }
 
-    .button {
+    .cta-button {
       text-align: center;
-      margin-top: 30px;
+      width: 100%;
 
-      @media screen and (min-width: $screen-laptop) {
-        text-align: left;
+      @media screen and (min-width: $screen-tablet) {
+        margin-right: 30px;
       }
-      .cta {
-          background: $secondary-color;
-          color: #fff;
-          border: none;
-          padding: 14px 70px 14px 70px;
-          max-width: 270px;
-          max-height: 50px;
-          cursor: pointer;
-          text-align: center;
 
-          &:hover, &:focus {
-            background: darken($secondary-color, 10%);
-          }
+      @media screen and (min-width: $screen-desktop) {
+        margin-right: 0;
+      }
+
+      .cta {
+        background: $secondary-color;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        color: $white;
+        padding: 10px 55px;
+      }
+
+      /*&:hover, &:focus {
+        background: darken($secondary-color, 10%);
+      }*/
+    }
+
+    .ghost-button {
+      text-align: center;
+      margin-top: 50px;
+
+      @media screen and (min-width: $screen-tablet) {
+        margin-top: 0;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+        margin-top: 50px;
+      }
+
+      .ghost {
+        background: $white;
+        border: solid 3px $secondary-color;
+        cursor: pointer;
+        text-align: center;
+        color: $secondary-color;
+        padding: 8px 85px;
       }
     }
