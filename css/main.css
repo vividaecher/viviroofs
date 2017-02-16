@@ -14,7 +14,6 @@ html {
 body {
   color: #0E324F;
   font-size: 1.325rem;
-  background: #010b16;
   font-family: 'montserratregular', sans-serif; }
   body.navigation-open {
     overflow: hidden;
@@ -24,9 +23,6 @@ body {
 
 html, body {
   height: 100%; }
-
-.sub-pages {
-  background: #fff; }
 
 @font-face {
   font-family: 'montserratregular';
@@ -129,16 +125,19 @@ header {
     transition: all ease .5s; }
 
 .wrapper {
-  margin-left: 40px;
-  margin-right: 40px; }
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #010b16; }
   @media screen and (min-width: 992px) {
     .wrapper {
-      margin-left: 120px;
-      margin-right: 120px; } }
+      padding-left: 120px;
+      padding-right: 120px; } }
   @media screen and (min-width: 2000px) {
     .wrapper {
-      margin-left: 250px;
-      margin-right: 250px; } }
+      padding-left: 250px;
+      padding-right: 250px; } }
+  .wrapper.sub-pages {
+    background: #fff; }
 
 .wrapper-start {
   background: #fff;
@@ -374,26 +373,32 @@ nav {
     margin: 0; }
 
 .heading-start {
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 20px; }
   @media screen and (min-width: 768px) {
     .heading-start {
-      padding-top: 70px;
+      padding-top: 150px;
       padding-bottom: 30px; } }
   @media screen and (min-width: 1280px) {
     .heading-start {
       padding-top: 90px;
       padding-bottom: 60px; } }
+  @media screen and (min-width: 1920px) {
+    .heading-start {
+      padding-top: 150px; } }
 
 .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
   .container:last-child {
-    padding-bottom: 60px; }
-    @media screen and (min-width: 1280px) {
+    padding-bottom: 80px; }
+    @media screen and (min-width: 768px) {
       .container:last-child {
         padding-bottom: 150px; } }
+    @media screen and (min-width: 1280px) {
+      .container:last-child {
+        padding-bottom: 90px; } }
   @media screen and (min-width: 1280px) {
     .container {
       flex-wrap: nowrap;
@@ -496,8 +501,7 @@ nav {
     @media screen and (min-width: 1920px) {
       .container-portfolio .right-portfolio {
         order: 2;
-        width: 40%;
-        margin-top: 45px; } }
+        width: 40%; } }
   .container-portfolio .cta-button {
     text-align: left; }
 
@@ -567,6 +571,12 @@ nav {
 .skills {
   margin-bottom: 50px;
   padding: 0 40px; }
+  @media screen and (min-width: 768px) {
+    .skills:nth-child(7), .skills:nth-child(8) {
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1280px) {
+    .skills:nth-child(5), .skills:nth-child(6), .skills:nth-child(7), .skills:nth-child(8) {
+      margin-bottom: 0; } }
   @media screen and (min-width: 768px) {
     .skills {
       width: 50%; } }
