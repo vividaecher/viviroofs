@@ -386,7 +386,7 @@ nav {
       margin-bottom: 60px; } }
   @media screen and (min-width: 1920px) {
     .heading-start {
-      margin-top: 179px; } }
+      margin-top: 120px; } }
 
 .container {
   display: flex;
@@ -397,14 +397,10 @@ nav {
     @media screen and (min-width: 768px) {
       .container:last-child {
         margin-bottom: 150px; } }
-    @media screen and (min-width: 1280px) {
-      .container:last-child {
-        margin-bottom: 90px; } }
   @media screen and (min-width: 1280px) {
     .container {
       flex-wrap: nowrap;
-      flex-direction: row;
-      margin-top: 20px; } }
+      flex-direction: row; } }
   .container .left {
     width: 100%; }
     @media screen and (min-width: 1280px) {
