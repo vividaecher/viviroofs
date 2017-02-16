@@ -54,6 +54,7 @@ html, body {
   height: 100%;
 }
 
+
 @font-face {
   font-family: 'montserratregular';
   src: url('../font/montserrat-regular-webfont.woff2') format('woff2'),
@@ -288,16 +289,17 @@ img {
       margin-top: 320px;
     }
   }
-  .arrow {
-    display: none;
+}
 
-    @media screen and (min-width: $screen-tablet) {
-      width: 50px;
-      bottom: 80px;
-      right: 50%;
-      position: absolute;
-      display: block;
-    }
+.arrow {
+  display: none;
+
+  @media screen and (min-width: $screen-tablet) {
+    width: 50px;
+    bottom: 80px;
+    right: 50%;
+    position: absolute;
+    display: block;
   }
 }
 
@@ -528,21 +530,21 @@ nav {
 }
 
 .heading-start {
-  padding-top: 80px;
-  padding-bottom: 20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $screen-tablet) {
-    padding-top: 150px;
-    padding-bottom: 30px;
+    margin-top: 150px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $screen-desktop) {
-    padding-top: 90px;
-    padding-bottom: 60px
+    margin-top: 68px;
+    margin-bottom: 60px
   }
 
   @media screen and (min-width: $screen-hd) {
-    padding-top: 150px;
+    margin-top: 179px;
   }
 }
 
@@ -552,29 +554,33 @@ nav {
   flex-wrap: wrap;
 
   &:last-child {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 
     @media screen and (min-width: $screen-tablet) {
-      padding-bottom: 150px;
+      margin-bottom: 150px;
     }
 
     @media screen and (min-width: $screen-desktop) {
-      padding-bottom: 90px;
+      margin-bottom: 90px;
     }
   }
 
   @media screen and (min-width: $screen-desktop) {
     flex-wrap: nowrap;
     flex-direction: row;
+    margin-top: 20px;
   }
 
   .left {
     width: 100%;
 
     @media screen and (min-width: $screen-desktop) {
-      width: 50%;
+      width: 70%;
       padding-right: 80px;
+    }
 
+    @media screen and (min-width: $screen-hd) {
+      width: 50%;
     }
   }
 
@@ -596,9 +602,13 @@ nav {
     }
 
     @media screen and (min-width: $screen-desktop) {
-      width: 50%;
+      width: 30%;
       flex-direction: column;
       order: 1;
+    }
+
+    @media screen and (min-width: $screen-hd) {
+      width: 50%;
     }
 
     .alignment {
@@ -797,12 +807,13 @@ nav {
 }
 
 .skills, .tools {
-  margin-bottom: 130px;
+  margin-bottom: 50px;
 
   @media screen and (min-width: $screen-tablet) {
     &:nth-child(7), &:nth-child(8) {
       margin-bottom: 0;
     }
+    margin-bottom: 130px;
   }
 
   @media screen and (min-width: $screen-desktop) {
