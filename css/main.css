@@ -1,3 +1,6 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 *:focus {
   outline: none; }
 
@@ -126,8 +129,8 @@ header {
     transition: all ease .5s; }
 
 .wrapper {
-  margin-left: 20px;
-  margin-right: 20px; }
+  margin-left: 40px;
+  margin-right: 40px; }
   @media screen and (min-width: 992px) {
     .wrapper {
       margin-left: 120px;
@@ -139,8 +142,9 @@ header {
 
 .wrapper-start {
   background: #fff;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 100%; }
   @media screen and (min-width: 992px) {
     .wrapper-start {
       padding-left: 120px;
@@ -243,8 +247,7 @@ nav {
     width: 45px;
     height: 43px; }
     nav .navbar-toggle.color-navbar {
-      border: solid 3px #42BDE2;
-      transition: all ease .5s; }
+      border: solid 3px #42BDE2; }
     @media screen and (min-width: 992px) {
       nav .navbar-toggle {
         right: 120px;
@@ -499,8 +502,7 @@ nav {
     text-align: left; }
 
 .cta-button {
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .cta-button {
       margin-right: 30px; } }
@@ -513,7 +515,7 @@ nav {
     cursor: pointer;
     text-align: center;
     color: #fff;
-    padding: 10px 55px; }
+    padding: 10px 83px; }
     @media screen and (min-width: 992px) {
       .cta-button .cta:hover, .cta-button .cta:focus {
         background: #20a8d1;
@@ -543,23 +545,46 @@ nav {
 
 .container-skill {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 -40px; }
   @media screen and (min-width: 768px) {
     .container-skill {
       flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%; } }
+      flex-direction: row; } }
+  @media screen and (min-width: 992px) {
+    .container-skill {
+      margin: 0 -70px; } }
+  @media screen and (min-width: 1280px) {
+    .container-skill {
+      margin: 0 -40px; } }
+  @media screen and (min-width: 1920px) {
+    .container-skill {
+      margin: 0 -80px; } }
+  @media screen and (min-width: 2000px) {
+    .container-skill {
+      margin: 0 -100px; } }
 
-.skills svg {
-  width: 30px;
-  padding-right: 15px; }
-  .skills svg .fill {
-    fill: #42BDE2; }
-  .skills svg .stroke {
-    stroke: #42BDE2;
-    fill: none;
-    stroke-width: 3;
-    stroke-miterlimit: 10; }
+.skills {
+  margin-bottom: 50px;
+  padding: 0 40px; }
+  @media screen and (min-width: 768px) {
+    .skills {
+      width: 50%; } }
+  @media screen and (min-width: 992px) {
+    .skills {
+      padding: 0 70px; } }
+  @media screen and (min-width: 1280px) {
+    .skills {
+      width: 25%;
+      padding: 0 40px; } }
+  @media screen and (min-width: 1920px) {
+    .skills {
+      padding: 0 80px; } }
+  @media screen and (min-width: 2000px) {
+    .skills {
+      padding: 0 100px; } }
+  .skills img {
+    padding-bottom: 20px;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

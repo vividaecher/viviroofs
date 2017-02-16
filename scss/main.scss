@@ -18,6 +18,10 @@ $screen-desktop: 1280px;
 $screen-hd: 1920px;
 $screen-tv: 2000px;
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 *:focus {
   outline: none;
 }
@@ -191,8 +195,8 @@ header {
 }
 
 .wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 
   @media screen and (min-width: $screen-laptop) {
     margin-left: 120px;
@@ -207,8 +211,9 @@ header {
 
 .wrapper-start {
   background: $white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 100%;
 
   @media screen and (min-width: $screen-laptop) {
     padding-left: 120px;
@@ -342,7 +347,6 @@ img {
 
         &.color-navbar {
           border: solid 3px $secondary-color;
-          transition: all ease .5s;
         }
 
         @media screen and (min-width: $screen-laptop) {
@@ -704,7 +708,6 @@ img {
 
     .cta-button {
       text-align: center;
-      width: 100%;
 
       @media screen and (min-width: $screen-tablet) {
         margin-right: 30px;
@@ -720,7 +723,7 @@ img {
         cursor: pointer;
         text-align: center;
         color: $white;
-        padding: 10px 55px;
+        padding: 10px 83px;
 
         @media screen and (min-width: $screen-laptop) {
           &:hover, &:focus {
@@ -763,30 +766,57 @@ img {
     .container-skill {
       display: flex;
       flex-direction: column;
+      margin: 0 -40px;
 
       @media screen and (min-width: $screen-tablet) {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
+      }
+
+      @media screen and (min-width: $screen-laptop) {
+        margin: 0 -70px;
+      }
+
+      @media screen and (min-width: $screen-desktop) {
+        margin: 0 -40px;
+      }
+
+      @media screen and (min-width: $screen-hd) {
+        margin: 0 -80px;
+      }
+
+      @media screen and (min-width: $screen-tv) {
+        margin: 0 -100px;
       }
     }
 
     .skills {
+      margin-bottom: 50px;
+      padding: 0 40px;
 
-      svg {
-        width: 30px;
-        padding-right: 15px;
+      @media screen and (min-width: $screen-tablet) {
+        width: 50%;
+      }
 
-        .fill {
-          fill: $secondary-color;
-        }
+      @media screen and (min-width: $screen-laptop) {
+        padding: 0 70px;
+      }
 
-        .stroke {
-          stroke: $secondary-color;
-          fill: none;
-          stroke-width: 3;
-          stroke-miterlimit: 10;
-        }
+      @media screen and (min-width: $screen-desktop) {
+        width: 25%;
+        padding: 0 40px;
+      }
+
+      @media screen and (min-width: $screen-hd) {
+        padding: 0 80px;
+      }
+
+      @media screen and (min-width: $screen-tv) {
+        padding: 0 100px;
+      }
+
+      img {
+        padding-bottom: 20px;
+        width: 100%;
       }
     }
