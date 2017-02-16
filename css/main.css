@@ -201,10 +201,10 @@ img {
       .container-start .start-img {
         width: 60%;
         margin-top: 320px; } }
-  .container-start svg {
+  .container-start .arrow {
     display: none; }
     @media screen and (min-width: 768px) {
-      .container-start svg {
+      .container-start .arrow {
         width: 50px;
         bottom: 80px;
         right: 50%;
@@ -547,54 +547,59 @@ nav {
         color: #fff;
         transition: all ease 1s; } }
 
-.container-skill {
+.container-pattern {
   display: flex;
   flex-direction: column;
   margin: 0 -40px; }
   @media screen and (min-width: 768px) {
-    .container-skill {
+    .container-pattern {
       flex-wrap: wrap;
       flex-direction: row; } }
   @media screen and (min-width: 992px) {
-    .container-skill {
+    .container-pattern {
       margin: 0 -70px; } }
   @media screen and (min-width: 1280px) {
-    .container-skill {
+    .container-pattern {
       margin: 0 -40px; } }
   @media screen and (min-width: 1920px) {
-    .container-skill {
+    .container-pattern {
       margin: 0 -80px; } }
   @media screen and (min-width: 2000px) {
-    .container-skill {
+    .container-pattern {
       margin: 0 -100px; } }
 
-.skills {
-  margin-bottom: 50px;
+.skills, .tools {
+  margin-bottom: 130px;
   padding: 0 40px; }
   @media screen and (min-width: 768px) {
-    .skills:nth-child(7), .skills:nth-child(8) {
+    .skills:nth-child(7), .skills:nth-child(8), .tools:nth-child(7), .tools:nth-child(8) {
       margin-bottom: 0; } }
   @media screen and (min-width: 1280px) {
-    .skills:nth-child(5), .skills:nth-child(6), .skills:nth-child(7), .skills:nth-child(8) {
+    .skills:nth-child(5), .skills:nth-child(6), .skills:nth-child(7), .skills:nth-child(8), .tools:nth-child(5), .tools:nth-child(6), .tools:nth-child(7), .tools:nth-child(8) {
       margin-bottom: 0; } }
   @media screen and (min-width: 768px) {
-    .skills {
+    .skills, .tools {
       width: 50%; } }
   @media screen and (min-width: 992px) {
-    .skills {
+    .skills, .tools {
       padding: 0 70px; } }
   @media screen and (min-width: 1280px) {
-    .skills {
+    .skills, .tools {
       width: 25%;
       padding: 0 40px; } }
   @media screen and (min-width: 1920px) {
-    .skills {
+    .skills, .tools {
       padding: 0 80px; } }
   @media screen and (min-width: 2000px) {
-    .skills {
+    .skills, .tools {
       padding: 0 100px; } }
-  .skills img {
+  .skills img, .tools img {
     padding-bottom: 20px;
     width: 100%; }
+  .skills.tools, .tools.tools {
+    text-align: center; }
+    .skills.tools img, .tools.tools img {
+      width: 50px;
+      padding-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

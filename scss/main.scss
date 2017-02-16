@@ -288,7 +288,7 @@ img {
       margin-top: 320px;
     }
   }
-  svg {
+  .arrow {
     display: none;
 
     @media screen and (min-width: $screen-tablet) {
@@ -769,7 +769,7 @@ nav {
   }
 }
 
-.container-skill {
+.container-pattern {
   display: flex;
   flex-direction: column;
   margin: 0 -40px;
@@ -796,8 +796,8 @@ nav {
   }
 }
 
-.skills {
-  margin-bottom: 50px;
+.skills, .tools {
+  margin-bottom: 130px;
 
   @media screen and (min-width: $screen-tablet) {
     &:nth-child(7), &:nth-child(8) {
@@ -837,5 +837,14 @@ nav {
   img {
     padding-bottom: 20px;
     width: 100%;
+  }
+
+  &.tools {
+    text-align: center;
+
+    img {
+      width: 50px;
+      padding-bottom: 0;
+    }
   }
 }
