@@ -8,7 +8,7 @@ $text-color: #0E324F;
 $fliestext: 1.325rem;
 $headline: 4.5rem;
 $headline-medium: 3.5rem;
-$sub-headline-medium: 2.3rem;
+$sub-headline-medium: 2.25rem;
 $sub-headline: 1.5rem;
 $navi-font-desktop: 3.5rem;
 
@@ -309,8 +309,8 @@ nav {
   a {
     color: white;
     font-family: 'montserratbold', sans-serif;
-    font-size: 2.25rem;
-    line-height: 60px;
+    font-size: $sub-headline-medium;
+    line-height: 70px;
     text-decoration: none;
 
     &:focus{
@@ -324,7 +324,7 @@ nav {
 
     @media screen and (min-width: $screen-desktop) {
       font-size: $navi-font-desktop;
-      line-height: 100px;
+      line-height: 110px;
 
       &:focus, &:hover {
         color: $secondary-color;
@@ -774,7 +774,7 @@ nav {
   }
 }
 
-.container-pattern {
+.container-pattern, .container-pattern-4 {
   display: flex;
   flex-direction: column;
   margin: 0 -40px;
@@ -799,9 +799,16 @@ nav {
   @media screen and (min-width: $screen-tv) {
     margin: 0 -100px;
   }
+
+  &.container-pattern-4 {
+
+    @media screen and (min-width: $screen-desktop) {
+      width: 100%;
+    }
+  }
 }
 
-.skills, .tools {
+.skills, .tools, .soft-skills {
   margin-bottom: 50px;
 
   @media screen and (min-width: $screen-tablet) {
@@ -853,4 +860,21 @@ nav {
       padding-bottom: 0;
     }
   }
+
+  &.soft-skills {
+    text-align: center;
+
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 50px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
 }
