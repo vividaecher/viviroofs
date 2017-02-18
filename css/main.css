@@ -405,7 +405,7 @@ nav {
     width: 100%; }
     @media screen and (min-width: 1280px) {
       .container .left {
-        width: 70%;
+        width: 60%;
         padding-right: 80px; } }
     @media screen and (min-width: 1920px) {
       .container .left {
@@ -425,7 +425,7 @@ nav {
         align-items: center; } }
     @media screen and (min-width: 1280px) {
       .container .right {
-        width: 30%;
+        width: 40%;
         flex-direction: column;
         order: 1; } }
     @media screen and (min-width: 1920px) {

@@ -570,7 +570,7 @@ nav {
     width: 100%;
 
     @media screen and (min-width: $screen-desktop) {
-      width: 70%;
+      width: 60%;
       padding-right: 80px;
     }
 
@@ -597,7 +597,7 @@ nav {
     }
 
     @media screen and (min-width: $screen-desktop) {
-      width: 30%;
+      width: 40%;
       flex-direction: column;
       order: 1;
     }
