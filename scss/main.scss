@@ -310,7 +310,7 @@ nav {
     color: white;
     font-family: 'montserratbold', sans-serif;
     font-size: 2.25rem;
-    line-height: 60px;
+    line-height: 70px;
     text-decoration: none;
 
     &:focus{
@@ -319,12 +319,12 @@ nav {
 
     @media screen and (min-width: $screen-tablet) {
       font-size: 3rem;
-      line-height: 100px;
+      line-height: 120px;
     }
 
     @media screen and (min-width: $screen-desktop) {
       font-size: $navi-font-desktop;
-      line-height: 100px;
+      line-height: 110px;
 
       &:focus, &:hover {
         color: $secondary-color;

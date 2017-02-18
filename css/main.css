@@ -218,18 +218,18 @@ nav {
     color: white;
     font-family: 'montserratbold', sans-serif;
     font-size: 2.25rem;
-    line-height: 60px;
+    line-height: 70px;
     text-decoration: none; }
     nav a:focus {
       color: #42BDE2; }
     @media screen and (min-width: 768px) {
       nav a {
         font-size: 3rem;
-        line-height: 100px; } }
+        line-height: 120px; } }
     @media screen and (min-width: 1280px) {
       nav a {
         font-size: 3.5rem;
-        line-height: 100px; }
+        line-height: 110px; }
         nav a:focus, nav a:hover {
           color: #42BDE2; } }
     @media screen and (min-width: 2000px) {
