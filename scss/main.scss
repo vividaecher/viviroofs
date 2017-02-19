@@ -764,7 +764,7 @@ nav {
   }
 }
 
-.container-pattern {
+.container-skills {
   display: flex;
   flex-direction: column;
   margin: 0 -40px;
@@ -791,7 +791,7 @@ nav {
   }
 }
 
-.skills, .tools {
+.skills {
   margin-bottom: 50px;
 
   @media screen and (min-width: $screen-tablet) {
@@ -834,13 +834,32 @@ nav {
     padding-bottom: 20px;
     width: 100%;
   }
+}
 
-  &.tools {
-    text-align: center;
+.container-icons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-    img {
-      width: 50px;
-      padding-bottom: 0;
-    }
+  @media screen and (min-width: $screen-tablet) {
+    flex-wrap: wrap;
+    flex-direction: row;
   }
+
+    .icons {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 30px;
+
+        @media screen and (min-width: $screen-tablet) {
+          width: 25%;
+          padding-bottom: 60px;
+        }
+
+      img {
+        width: 50px;
+        padding-bottom: 0;
+      }
+    }
+
 }
