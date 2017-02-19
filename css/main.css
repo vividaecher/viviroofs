@@ -406,36 +406,28 @@ nav {
     @media screen and (min-width: 1280px) {
       .container .left {
         width: 60%;
-        padding-right: 80px; } }
-    @media screen and (min-width: 1920px) {
-      .container .left {
-        width: 50%; } }
+        padding-right: 120px; } }
   .container .right {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    justify-content: center; }
+    align-items: center; }
     @media screen and (min-width: 768px) {
       .container .right {
-        flex-direction: row;
-        justify-content: flex-start; } }
-    @media screen and (min-width: 992px) {
-      .container .right {
-        align-items: center; } }
+        flex-direction: row; } }
     @media screen and (min-width: 1280px) {
       .container .right {
         width: 40%;
         flex-direction: column;
         order: 1; } }
-    @media screen and (min-width: 1920px) {
-      .container .right {
-        width: 50%; } }
     .container .right .alignment {
-      padding-top: 0; }
+      padding-top: 0;
+      align-self: flex-start; }
       @media screen and (min-width: 1280px) {
         .container .right .alignment {
-          padding-top: 38px; } }
+          padding-top: 68px; } }
+    .container .right img {
+      width: 80%; }
 
 .container-portfolio {
   display: flex;

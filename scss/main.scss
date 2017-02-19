@@ -571,11 +571,7 @@ nav {
 
     @media screen and (min-width: $screen-desktop) {
       width: 60%;
-      padding-right: 80px;
-    }
-
-    @media screen and (min-width: $screen-hd) {
-      width: 50%;
+      padding-right: 120px;
     }
   }
 
@@ -583,17 +579,10 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    justify-content: center;
-
+    align-items: center;
 
     @media screen and (min-width: $screen-tablet) {
       flex-direction: row;
-      justify-content: flex-start;
-    }
-
-    @media screen and (min-width: $screen-laptop) {
-      align-items: center;
     }
 
     @media screen and (min-width: $screen-desktop) {
@@ -602,16 +591,17 @@ nav {
       order: 1;
     }
 
-    @media screen and (min-width: $screen-hd) {
-      width: 50%;
-    }
-
     .alignment {
       padding-top: 0;
+      align-self: flex-start;
 
       @media screen and (min-width: $screen-desktop) {
-        padding-top: 38px;
+        padding-top: 68px;
       }
+    }
+
+    img {
+      width: 80%;
     }
   }
 }
