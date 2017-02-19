@@ -861,5 +861,23 @@ nav {
         padding-bottom: 0;
       }
     }
+  }
 
-}
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 150px;
+    }
+
+    @media screen and (min-width: $screen-hd) {
+      p {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }

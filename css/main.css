@@ -615,4 +615,18 @@ nav {
       width: 50px;
       padding-bottom: 0; }
 
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    footer {
+      margin-bottom: 150px; } }
+  @media screen and (min-width: 1920px) {
+    footer p {
+      width: 50%;
+      margin: 0 auto; } }
+
 /*# sourceMappingURL=main.css.map */
