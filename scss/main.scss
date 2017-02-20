@@ -551,7 +551,7 @@ nav {
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
 
   &:last-child {

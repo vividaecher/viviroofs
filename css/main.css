@@ -391,7 +391,7 @@ nav {
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap; }
   .container:last-child {
     margin-bottom: 80px; }
