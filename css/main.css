@@ -621,8 +621,6 @@ nav {
 
 footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   margin-bottom: 80px; }
   @media screen and (min-width: 768px) {
@@ -631,6 +629,16 @@ footer {
   @media screen and (min-width: 1920px) {
     footer p {
       width: 50%;
-      margin: 0 auto; } }
+      margin: 0 auto 60px auto; } }
+  footer .cta-button {
+    margin-right: 0; }
+    @media screen and (min-width: 768px) {
+      footer .cta-button {
+        margin-right: 30px; } }
+  footer .cta-button, footer .ghost-button {
+    display: block; }
+    @media screen and (min-width: 992px) {
+      footer .cta-button, footer .ghost-button {
+        display: inline; } }
 
 /*# sourceMappingURL=main.css.map */
