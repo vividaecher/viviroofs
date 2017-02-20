@@ -725,7 +725,9 @@ nav {
     cursor: pointer;
     text-align: center;
     color: $white;
-    padding: 10px 83px;
+    display: block;
+    width: 240px;
+    padding: 10px 0;
 
     @media screen and (min-width: $screen-laptop) {
       &:hover, &:focus {
@@ -738,14 +740,14 @@ nav {
 
 .ghost-button {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 
   @media screen and (min-width: $screen-tablet) {
     margin-top: 0;
   }
 
   @media screen and (min-width: $screen-desktop) {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .ghost {
@@ -754,7 +756,9 @@ nav {
     cursor: pointer;
     text-align: center;
     color: $secondary-color;
-    padding: 8px 85px;
+    display: block;
+    width: 240px;
+    padding: 7px 0;
 
     @media screen and (min-width: $screen-laptop) {
       &:hover, &:focus {
@@ -900,8 +904,9 @@ nav {
 
       display: block;
 
-      @media screen and (min-width: $screen-laptop) {
-        display: inline;
+      @media screen and (min-width: $screen-tablet) {
+        display: inline-block;
+        margin-top: 0;
       }
     }
   }

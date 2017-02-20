@@ -516,7 +516,9 @@ nav {
     cursor: pointer;
     text-align: center;
     color: #fff;
-    padding: 10px 83px; }
+    display: block;
+    width: 240px;
+    padding: 10px 0; }
     @media screen and (min-width: 992px) {
       .cta-button .cta:hover, .cta-button .cta:focus {
         background: #20a8d1;
@@ -524,20 +526,22 @@ nav {
 
 .ghost-button {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 30px; }
   @media screen and (min-width: 768px) {
     .ghost-button {
       margin-top: 0; } }
   @media screen and (min-width: 1280px) {
     .ghost-button {
-      margin-top: 50px; } }
+      margin-top: 30px; } }
   .ghost-button .ghost {
     background: #fff;
     border: solid 3px #42BDE2;
     cursor: pointer;
     text-align: center;
     color: #42BDE2;
-    padding: 8px 85px; }
+    display: block;
+    width: 240px;
+    padding: 7px 0; }
     @media screen and (min-width: 992px) {
       .ghost-button .ghost:hover, .ghost-button .ghost:focus {
         background: #42BDE2;
@@ -637,8 +641,9 @@ footer {
         margin-right: 30px; } }
   footer .cta-button, footer .ghost-button {
     display: block; }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       footer .cta-button, footer .ghost-button {
-        display: inline; } }
+        display: inline-block;
+        margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
