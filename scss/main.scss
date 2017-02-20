@@ -310,6 +310,7 @@ nav {
     color: white;
     font-family: 'montserratbold', sans-serif;
     font-size: $sub-headline-medium;
+    font-size: 2.25rem;
     line-height: 70px;
     text-decoration: none;
 
@@ -319,7 +320,7 @@ nav {
 
     @media screen and (min-width: $screen-tablet) {
       font-size: 3rem;
-      line-height: 100px;
+      line-height: 120px;
     }
 
     @media screen and (min-width: $screen-desktop) {
@@ -570,12 +571,8 @@ nav {
     width: 100%;
 
     @media screen and (min-width: $screen-desktop) {
-      width: 70%;
-      padding-right: 80px;
-    }
-
-    @media screen and (min-width: $screen-hd) {
-      width: 50%;
+      width: 60%;
+      padding-right: 120px;
     }
   }
 
@@ -583,35 +580,29 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    justify-content: center;
-
+    align-items: center;
 
     @media screen and (min-width: $screen-tablet) {
       flex-direction: row;
-      justify-content: flex-start;
-    }
-
-    @media screen and (min-width: $screen-laptop) {
-      align-items: center;
     }
 
     @media screen and (min-width: $screen-desktop) {
-      width: 30%;
+      width: 40%;
       flex-direction: column;
       order: 1;
     }
 
-    @media screen and (min-width: $screen-hd) {
-      width: 50%;
-    }
-
     .alignment {
       padding-top: 0;
+      align-self: flex-start;
 
       @media screen and (min-width: $screen-desktop) {
-        padding-top: 38px;
+        padding-top: 68px;
       }
+    }
+
+    img {
+      width: 80%;
     }
   }
 }
@@ -774,7 +765,7 @@ nav {
   }
 }
 
-.container-pattern, .container-pattern-4 {
+.container-skills {
   display: flex;
   flex-direction: column;
   margin: 0 -40px;
@@ -808,7 +799,7 @@ nav {
   }
 }
 
-.skills, .tools, .soft-skills {
+.skills {
   margin-bottom: 50px;
 
   @media screen and (min-width: $screen-tablet) {
@@ -851,30 +842,50 @@ nav {
     padding-bottom: 20px;
     width: 100%;
   }
+}
 
-  &.tools {
-    text-align: center;
+.container-icons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-    img {
-      width: 50px;
-      padding-bottom: 0;
+  @media screen and (min-width: $screen-tablet) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+    .icons {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 30px;
+
+        @media screen and (min-width: $screen-tablet) {
+          width: 25%;
+          padding-bottom: 60px;
+        }
+
+      img {
+        width: 50px;
+        padding-bottom: 0;
+      }
     }
   }
 
-  &.soft-skills {
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin-bottom: 80px;
 
-    @media screen and (min-width: $screen-desktop) {
-      margin-bottom: 0;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 150px;
     }
 
-    img {
-      width: 50px;
-      padding-bottom: 0;
+    @media screen and (min-width: $screen-hd) {
+      p {
+        width: 50%;
+        margin: 0 auto;
+      }
     }
   }
-}
-
-.footer {
-  text-align: center;
-}

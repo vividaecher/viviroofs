@@ -218,6 +218,7 @@ nav {
     color: white;
     font-family: 'montserratbold', sans-serif;
     font-size: 2.25rem;
+    font-size: 2.25rem;
     line-height: 70px;
     text-decoration: none; }
     nav a:focus {
@@ -225,7 +226,7 @@ nav {
     @media screen and (min-width: 768px) {
       nav a {
         font-size: 3rem;
-        line-height: 100px; } }
+        line-height: 120px; } }
     @media screen and (min-width: 1280px) {
       nav a {
         font-size: 3.5rem;
@@ -405,37 +406,29 @@ nav {
     width: 100%; }
     @media screen and (min-width: 1280px) {
       .container .left {
-        width: 70%;
-        padding-right: 80px; } }
-    @media screen and (min-width: 1920px) {
-      .container .left {
-        width: 50%; } }
+        width: 60%;
+        padding-right: 120px; } }
   .container .right {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    justify-content: center; }
+    align-items: center; }
     @media screen and (min-width: 768px) {
       .container .right {
-        flex-direction: row;
-        justify-content: flex-start; } }
-    @media screen and (min-width: 992px) {
-      .container .right {
-        align-items: center; } }
+        flex-direction: row; } }
     @media screen and (min-width: 1280px) {
       .container .right {
-        width: 30%;
+        width: 40%;
         flex-direction: column;
         order: 1; } }
-    @media screen and (min-width: 1920px) {
-      .container .right {
-        width: 50%; } }
     .container .right .alignment {
-      padding-top: 0; }
+      padding-top: 0;
+      align-self: flex-start; }
       @media screen and (min-width: 1280px) {
         .container .right .alignment {
-          padding-top: 38px; } }
+          padding-top: 68px; } }
+    .container .right img {
+      width: 80%; }
 
 .container-portfolio {
   display: flex;
@@ -551,75 +544,93 @@ nav {
         color: #fff;
         transition: all ease 1s; } }
 
-.container-pattern, .container-pattern-4 {
+.container-skills {
   display: flex;
   flex-direction: column;
   margin: 0 -40px; }
   @media screen and (min-width: 768px) {
-    .container-pattern, .container-pattern-4 {
+    .container-skills {
       flex-wrap: wrap;
       flex-direction: row; } }
   @media screen and (min-width: 992px) {
-    .container-pattern, .container-pattern-4 {
+    .container-skills {
       margin: 0 -70px; } }
   @media screen and (min-width: 1280px) {
-    .container-pattern, .container-pattern-4 {
+    .container-skills {
       margin: 0 -40px; } }
   @media screen and (min-width: 1920px) {
-    .container-pattern, .container-pattern-4 {
+    .container-skills {
       margin: 0 -80px; } }
   @media screen and (min-width: 2000px) {
-    .container-pattern, .container-pattern-4 {
+    .container-skills {
       margin: 0 -100px; } }
   @media screen and (min-width: 1280px) {
-    .container-pattern.container-pattern-4, .container-pattern-4.container-pattern-4 {
+    .container-skills.container-pattern-4 {
       width: 100%; } }
 
-.skills, .tools, .soft-skills {
+.skills {
   margin-bottom: 50px;
   padding: 0 40px; }
   @media screen and (min-width: 768px) {
-    .skills, .tools, .soft-skills {
+    .skills {
       margin-bottom: 130px; }
-      .skills:nth-child(7), .skills:nth-child(8), .tools:nth-child(7), .tools:nth-child(8), .soft-skills:nth-child(7), .soft-skills:nth-child(8) {
+      .skills:nth-child(7), .skills:nth-child(8) {
         margin-bottom: 0; } }
   @media screen and (min-width: 1280px) {
-    .skills:nth-child(5), .skills:nth-child(6), .skills:nth-child(7), .skills:nth-child(8), .tools:nth-child(5), .tools:nth-child(6), .tools:nth-child(7), .tools:nth-child(8), .soft-skills:nth-child(5), .soft-skills:nth-child(6), .soft-skills:nth-child(7), .soft-skills:nth-child(8) {
+    .skills:nth-child(5), .skills:nth-child(6), .skills:nth-child(7), .skills:nth-child(8) {
       margin-bottom: 0; } }
   @media screen and (min-width: 768px) {
-    .skills, .tools, .soft-skills {
+    .skills {
       width: 50%; } }
   @media screen and (min-width: 992px) {
-    .skills, .tools, .soft-skills {
+    .skills {
       padding: 0 70px; } }
   @media screen and (min-width: 1280px) {
-    .skills, .tools, .soft-skills {
+    .skills {
       width: 25%;
       padding: 0 40px; } }
   @media screen and (min-width: 1920px) {
-    .skills, .tools, .soft-skills {
+    .skills {
       padding: 0 80px; } }
   @media screen and (min-width: 2000px) {
-    .skills, .tools, .soft-skills {
+    .skills {
       padding: 0 100px; } }
-  .skills img, .tools img, .soft-skills img {
+  .skills img {
     padding-bottom: 20px;
     width: 100%; }
-  .skills.tools, .tools.tools, .soft-skills.tools {
-    text-align: center; }
-    .skills.tools img, .tools.tools img, .soft-skills.tools img {
-      width: 50px;
-      padding-bottom: 0; }
-  .skills.soft-skills, .tools.soft-skills, .soft-skills.soft-skills {
-    text-align: center; }
-    @media screen and (min-width: 1280px) {
-      .skills.soft-skills, .tools.soft-skills, .soft-skills.soft-skills {
-        margin-bottom: 0; } }
-    .skills.soft-skills img, .tools.soft-skills img, .soft-skills.soft-skills img {
+
+.container-icons {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .container-icons {
+      flex-wrap: wrap;
+      flex-direction: row; } }
+  .container-icons .icons {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px; }
+    @media screen and (min-width: 768px) {
+      .container-icons .icons {
+        width: 25%;
+        padding-bottom: 60px; } }
+    .container-icons .icons img {
       width: 50px;
       padding-bottom: 0; }
 
-.footer {
-  text-align: center; }
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    footer {
+      margin-bottom: 150px; } }
+  @media screen and (min-width: 1920px) {
+    footer p {
+      width: 50%;
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
