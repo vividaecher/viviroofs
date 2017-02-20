@@ -640,7 +640,7 @@ footer {
       footer .cta-button {
         margin-right: 30px; } }
   footer .cta-button, footer .ghost-button {
-    display: block; }
+    display: inline-block; }
     @media screen and (min-width: 768px) {
       footer .cta-button, footer .ghost-button {
         display: inline-block;

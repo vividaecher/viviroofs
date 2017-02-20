@@ -902,7 +902,7 @@ nav {
 
     .cta-button, .ghost-button {
 
-      display: block;
+      display: inline-block;
 
       @media screen and (min-width: $screen-tablet) {
         display: inline-block;
