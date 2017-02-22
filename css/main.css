@@ -37,6 +37,9 @@ html, body {
   font-style: normal; }
 
 h1 {
+  display: none; }
+
+h2 {
   font-family: 'montserratbold', sans-serif;
   font-size: 2.25rem;
   line-height: 45px;
@@ -45,23 +48,23 @@ h1 {
   text-align: center;
   margin: 0; }
   @media screen and (min-width: 768px) {
-    h1 {
+    h2 {
       line-height: 90px;
       font-size: 4.5rem; } }
   @media screen and (min-width: 1280px) {
-    h1 {
+    h2 {
       font-size: 3.5rem;
       line-height: 70px; } }
   @media screen and (min-width: 1920px) {
-    h1 {
+    h2 {
       font-size: 4.5rem;
       line-height: 90px; } }
-  h1 span {
+  h2 span {
     font-family: 'montserratbold', sans-serif;
     color: #42BDE2;
     background: transparent; }
 
-h2 {
+h3 {
   font-family: 'montserratbold', sans-serif;
   font-size: 1.5rem;
   color: #42BDE2;
@@ -69,11 +72,11 @@ h2 {
   margin: 0;
   padding-bottom: 10px; }
   @media screen and (min-width: 768px) {
-    h2 {
+    h3 {
       text-align: left;
       font-size: 2.25rem; } }
 
-h3 {
+h4 {
   font-size: 1.325rem;
   color: #42BDE2;
   font-family: 'montserratbold', sans-serif; }
@@ -176,7 +179,7 @@ img {
     justify-content: center;
     z-index: 1;
     margin-top: 150px; }
-    .container-start .start-headline h1 {
+    .container-start .start-headline h2 {
       color: #fff; }
     @media screen and (min-width: 1280px) {
       .container-start .start-headline {
@@ -184,7 +187,7 @@ img {
         flex-direction: row;
         width: 30%;
         margin-top: 85px; }
-        .container-start .start-headline h1 {
+        .container-start .start-headline h2 {
           margin-right: -195px;
           text-align: left; } }
     @media screen and (min-width: 2000px) {
@@ -371,7 +374,7 @@ nav {
     .heading {
       padding-top: 230px;
       padding-bottom: 80px; } }
-  .heading h1 {
+  .heading h2 {
     margin: 0; }
 
 .heading-start {
@@ -465,15 +468,15 @@ nav {
   @media screen and (min-width: 2000px) {
     .container-portfolio {
       padding-bottom: 340px; } }
-  .container-portfolio h1 {
+  .container-portfolio h2 {
     padding: 10px 0;
     text-align: center;
     font-size: 2rem; }
     @media screen and (min-width: 768px) {
-      .container-portfolio h1 {
+      .container-portfolio h2 {
         text-align: left;
         font-size: 3.5rem; } }
-  .container-portfolio h2 {
+  .container-portfolio h3 {
     font-size: 1.5rem;
     text-align: left; }
   @media screen and (min-width: 1280px) {
