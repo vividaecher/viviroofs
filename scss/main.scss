@@ -551,7 +551,6 @@ nav {
 .container {
   display: flex;
   flex-direction: column-reverse;
-  flex-wrap: wrap;
 
   &:last-child {
     margin-bottom: 80px;
@@ -773,7 +772,7 @@ nav {
 
   @media screen and (min-width: $screen-desktop) {
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 }
 

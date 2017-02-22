@@ -390,8 +390,7 @@ nav {
 
 .container {
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap; }
+  flex-direction: column-reverse; }
   .container:last-child {
     margin-bottom: 80px; }
     @media screen and (min-width: 768px) {
@@ -553,7 +552,7 @@ nav {
 @media screen and (min-width: 1280px) {
   .button {
     flex-direction: column;
-    margin-top: 10px; } }
+    margin-top: 12px; } }
 
 .container-skills {
   display: flex;
