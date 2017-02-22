@@ -129,7 +129,7 @@
   </header>
   <div class="wrapper">
     <section class="container-start">
-      <img class="arrow" src="img/icons/arrow.svg" alt="Nach unten" />
+      <a href="#arrow"><img class="arrow" src="img/icons/arrow.svg" alt="Nach unten" /></a>
       <div class="start-headline">
         <h1><span>Hallo! Ich bin Vivi: </span>Frontend- und UX-Designerin!</h1>
       </div>
@@ -138,6 +138,7 @@
       </div>
     </section>
   </div>
+<div id="arrow"></div>
   <div class="wrapper-start">
     <div class="heading-start">
       <h1>Schön, dass Du da bist!</h1>
@@ -291,6 +292,23 @@
     </div>
   </div>
   <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script>
+  $(function() {
+   $('a[href*="#"]:not([href="#"])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         var targetLength = Math.max(target.offset().top - $('header').outerHeight(),0);
+         $('html, body').animate({
+           scrollTop: targetLength,
+         }, 900, 'swing');
+         return false;
+       }
+     }
+   });
+  });
+  </script>
   <script src="js/init.js" type="text/javascript"></script>
 </body>
 </html>

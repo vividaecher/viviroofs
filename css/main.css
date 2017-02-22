@@ -321,7 +321,7 @@ nav {
       display: block;
       padding-left: 0;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
       margin-left: -8px;
       margin-right: -8px; }
       @media screen and (min-width: 768px) {
@@ -354,7 +354,7 @@ nav {
 
 .heading {
   padding-top: 110px;
-  padding-bottom: 20px; }
+  padding-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .heading {
       padding-top: 140px;
@@ -376,11 +376,10 @@ nav {
 
 .heading-start {
   margin-top: 80px;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .heading-start {
-      margin-top: 150px;
-      margin-bottom: 30px; } }
+      margin-top: 150px; } }
   @media screen and (min-width: 1280px) {
     .heading-start {
       margin-top: 68px;
@@ -412,10 +411,8 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    @media screen and (min-width: 768px) {
-      .container .right {
-        flex-direction: row; } }
+    align-items: center;
+    margin-bottom: 30px; }
     @media screen and (min-width: 1280px) {
       .container .right {
         width: 40%;
@@ -547,6 +544,16 @@ nav {
         background: #42BDE2;
         color: #fff;
         transition: all ease 1s; } }
+
+@media screen and (min-width: 768px) {
+  .button {
+    display: flex;
+    flex-direction: row; } }
+
+@media screen and (min-width: 1280px) {
+  .button {
+    flex-direction: column;
+    margin-top: 10px; } }
 
 .container-skills {
   display: flex;

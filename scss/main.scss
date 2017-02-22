@@ -452,7 +452,7 @@ nav {
       display: block;
       padding-left: 0;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
       margin-left: -8px;
       margin-right: -8px;
 
@@ -503,7 +503,7 @@ nav {
 
 .heading {
   padding-top: 110px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   @media screen and (min-width: $screen-tablet) {
     padding-top: 140px;
@@ -532,11 +532,10 @@ nav {
 
 .heading-start {
   margin-top: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $screen-tablet) {
     margin-top: 150px;
-    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $screen-desktop) {
@@ -581,10 +580,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media screen and (min-width: $screen-tablet) {
-      flex-direction: row;
-    }
+    margin-bottom: 30px;
 
     @media screen and (min-width: $screen-desktop) {
       width: 40%;
@@ -766,6 +762,18 @@ nav {
         color: $white;transition: all ease 1s;
       }
     }
+  }
+}
+
+.button {
+  @media screen and (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    flex-direction: column;
+    margin-top: 10px;
   }
 }
 
