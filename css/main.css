@@ -453,7 +453,6 @@ nav {
 .container-portfolio {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding-bottom: 110px; }
   .container-portfolio:first-child {
     padding-top: 150px; }
@@ -481,9 +480,8 @@ nav {
   @media screen and (min-width: 1280px) {
     .container-portfolio {
       padding-bottom: 150px; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     .container-portfolio {
-      flex-wrap: nowrap;
       flex-direction: row;
       padding-bottom: 200px; } }
   @media screen and (min-width: 2000px) {
@@ -500,25 +498,25 @@ nav {
   .container-portfolio h3 {
     font-size: 1.5rem;
     text-align: left; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 992px) {
     .container-portfolio .left-portfolio {
       width: 60%;
       align-self: center; } }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     .container-portfolio .left-portfolio {
       order: 1;
-      width: 60%;
+      width: 55%;
       padding-right: 80px; } }
   .container-portfolio .right-portfolio {
     display: flex;
     flex-direction: column; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 992px) {
       .container-portfolio .right-portfolio {
         width: 100%; } }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1280px) {
       .container-portfolio .right-portfolio {
         order: 2;
-        width: 40%; } }
+        width: 45%; } }
   .container-portfolio .cta-button {
     text-align: left; }
 
@@ -537,8 +535,8 @@ nav {
     text-align: center;
     color: #fff;
     display: block;
-    width: 240px;
-    padding: 10px 0; }
+    width: 300px;
+    padding: 15px 0; }
     @media screen and (min-width: 992px) {
       .cta-button .cta:hover, .cta-button .cta:focus {
         background: #20a8d1;
@@ -560,8 +558,8 @@ nav {
     text-align: center;
     color: #42BDE2;
     display: block;
-    width: 240px;
-    padding: 7px 0; }
+    width: 300px;
+    padding: 12px 0; }
     @media screen and (min-width: 992px) {
       .ghost-button .ghost:hover, .ghost-button .ghost:focus {
         background: #42BDE2;

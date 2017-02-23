@@ -637,32 +637,31 @@ nav {
 .container-portfolio {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding-bottom: 110px;
 
-  &:first-child {
-    padding-top: 150px;
+    &:first-child {
+      padding-top: 150px;
 
-    @media screen and (min-width: $screen-tablet) {
-      padding-top: 210px;
-    }
+      @media screen and (min-width: $screen-tablet) {
+        padding-top: 210px;
+      }
 
-    @media screen and (min-width: $screen-laptop) {
-      padding-top: 270px;
-    }
+      @media screen and (min-width: $screen-laptop) {
+        padding-top: 270px;
+      }
 
-    @media screen and (min-width: $screen-desktop) {
-      padding-top: 220px;
-    }
+      @media screen and (min-width: $screen-desktop) {
+        padding-top: 220px;
+      }
 
-    @media screen and (min-width: $screen-hd) {
-      padding-top: 280px;
-    }
+      @media screen and (min-width: $screen-hd) {
+        padding-top: 280px;
+      }
 
-    @media screen and (min-width: $screen-tv) {
-      padding-top: 300px;
+      @media screen and (min-width: $screen-tv) {
+        padding-top: 300px;
+      }
     }
-  }
 
   @media screen and (min-width: $screen-tablet) {
     padding-bottom: 180px;
@@ -676,8 +675,7 @@ nav {
     padding-bottom: 150px;
   }
 
-  @media screen and (min-width: $screen-hd) {
-    flex-wrap: nowrap;
+  @media screen and (min-width: $screen-desktop) {
     flex-direction: row;
     padding-bottom: 200px;
   }
@@ -704,14 +702,14 @@ nav {
   }
 
   .left-portfolio {
-    @media screen and (min-width: $screen-desktop) {
+    @media screen and (min-width: $screen-laptop) {
       width: 60%;
       align-self: center;
     }
 
-    @media screen and (min-width: $screen-hd) {
+    @media screen and (min-width: $screen-desktop) {
       order: 1;
-      width: 60%;
+      width: 55%;
       padding-right: 80px;
     }
   }
@@ -720,13 +718,13 @@ nav {
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: $screen-desktop) {
+    @media screen and (min-width: $screen-laptop) {
       width: 100%;
     }
 
-    @media screen and (min-width: $screen-hd) {
+    @media screen and (min-width: $screen-desktop) {
       order: 2;
-      width: 40%;
+      width: 45%;
     }
   }
 
@@ -753,8 +751,8 @@ nav {
     text-align: center;
     color: $white;
     display: block;
-    width: 240px;
-    padding: 10px 0;
+    width: 300px;
+    padding: 15px 0;
 
     @media screen and (min-width: $screen-laptop) {
       &:hover, &:focus {
@@ -784,8 +782,8 @@ nav {
     text-align: center;
     color: $secondary-color;
     display: block;
-    width: 240px;
-    padding: 7px 0;
+    width: 300px;
+    padding: 12px 0;
 
     @media screen and (min-width: $screen-laptop) {
       &:hover, &:focus {
