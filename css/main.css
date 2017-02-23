@@ -243,7 +243,8 @@ nav {
         font-size: 3.5rem;
         line-height: 110px; }
         nav a:focus, nav a:hover {
-          color: #42BDE2; } }
+          color: #42BDE2;
+          transition: all ease .5s; } }
     @media screen and (min-width: 2000px) {
       nav a {
         font-size: 4.5rem;
@@ -371,7 +372,8 @@ nav {
         nav .design-platforms svg {
           height: 50px; } }
     nav .design-platforms .icons {
-      fill: #fff; }
+      fill: #fff;
+      transition: all ease .5s; }
       @media screen and (min-width: 992px) {
         nav .design-platforms .icons:hover, nav .design-platforms .icons:focus {
           fill: #42BDE2; } }

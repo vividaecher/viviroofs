@@ -345,6 +345,7 @@ nav {
 
       &:focus, &:hover {
         color: $secondary-color;
+        transition: all ease .5s;
       }
     }
     @media screen and (min-width: $screen-tv) {
@@ -522,6 +523,7 @@ nav {
 
     .icons {
       fill: $white;
+      transition: all ease .5s;
 
       @media screen and (min-width: $screen-laptop) {
         &:hover, &:focus {
@@ -797,7 +799,8 @@ nav {
     @media screen and (min-width: $screen-laptop) {
       &:hover, &:focus {
         background: $secondary-color;
-        color: $white;transition: all ease 1s;
+        color: $white;
+        transition: all ease 1s;
       }
     }
   }
