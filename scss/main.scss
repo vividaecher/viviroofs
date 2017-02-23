@@ -152,7 +152,7 @@ a {
 }
 
 header {
-  padding: 20px;
+  padding: 25px 35px;
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
@@ -160,12 +160,24 @@ header {
   position: fixed;
 
   @media screen and (min-width: $screen-laptop) {
-    padding: 30px 120px 30px 120px
+    padding: 30px 120px;
+  }
+
+  @media screen and (min-width: $screen-hd) {
+    padding: 50px 120px;
   }
 
   @media screen and (min-width: $screen-tv) {
     padding-left: 250px;
     padding-right: 250px;
+  }
+
+  .brand-logo {
+    display: block;
+    float: left;
+
+    line-height: 0;
+    font-size: 0;
   }
 
   svg {
@@ -348,17 +360,26 @@ nav {
     background-color: transparent;
     border: solid 3px $white;
     z-index: 9;
-    right: 20px;
     width: 45px;
     height: 43px;
+    right: 35px;
+    top: 24px;
 
     &.color-navbar {
       border: solid 3px $secondary-color;
     }
 
+    @media screen and (min-width: $screen-tablet) {
+      top: 29px;
+    }
+
     @media screen and (min-width: $screen-laptop) {
       right: 120px;
-      top: 35px;
+      top: 34px;
+    }
+
+    @media screen and (min-width: $screen-hd) {
+      top: 54px;
     }
 
     @media screen and (min-width: $screen-tv) {
@@ -367,6 +388,10 @@ nav {
 
     &.close-navigation {
       padding: 18.5px 19.5px;
+
+      @media screen and (min-width: $screen-laptop) {
+        right: 135px;
+      }
 
       span {
         display: block;
@@ -418,13 +443,13 @@ nav {
   }
 
   .hamburger-nav {
-    display: none;
+    display: flex;
     position: fixed;
     height: 100%;
     width: 100%;
     left: 0;
     right: 0;
-    top: 0;
+    top: -100%;
     background: $primary-color;
     list-style: none;
     z-index: 8;
@@ -433,6 +458,8 @@ nav {
     justify-content: center;
     padding: 0;
     margin: 0;
+    opacity: 0;
+    transition: opacity 0.5s, top 0s 0.5s;
 
     .current {
       color: $secondary-color;
@@ -445,7 +472,9 @@ nav {
     }
 
     &.visible {
-      display: flex;
+      transition: opacity 0.5s;
+      opacity: 1;
+      top: 0;
     }
   }
 
@@ -457,8 +486,6 @@ nav {
       padding-left: 0;
       text-align: center;
       margin-top: 30px;
-      margin-left: -8px;
-      margin-right: -8px;
 
       @media screen and (min-width: $screen-tablet) {
         margin-left: -15px;
@@ -472,23 +499,24 @@ nav {
 
       li {
         display: inline-block;
-        padding-left: 15px;
+        padding: 0 8px;
 
         @media screen and (min-width: $screen-tablet) {
-          padding-left: 25px;
+          padding: 0 15px;
         }
 
         @media screen and (min-width: $screen-hd) {
-          padding-left: 30px;
+          padding: 0 18px;
         }
       }
     }
 
     svg {
-      width: 35px;
+      height: 35px;
+      width: auto;
 
       @media screen and (min-width: $screen-tablet) {
-        width: 50px;
+        height: 50px;
       }
     }
 
