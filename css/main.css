@@ -692,4 +692,7 @@ footer {
   footer .icons {
     padding-bottom: 0; }
 
+.safari-fix {
+  overflow: hidden; }
+
 /*# sourceMappingURL=main.css.map */
