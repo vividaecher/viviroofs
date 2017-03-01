@@ -935,6 +935,9 @@ nav {
     }
   }
 
+    .margin-bottom {
+      overflow: auto;
+    }
 
   footer {
     width: 100%;
@@ -975,8 +978,4 @@ nav {
     .icons {
       padding-bottom: 0;
     }
-  }
-
-  .safari-fix {
-    overflow: hidden;
   }

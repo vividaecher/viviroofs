@@ -665,6 +665,9 @@ nav {
     .container-icons .icons p {
       padding-bottom: 0; }
 
+.margin-bottom {
+  overflow: auto; }
+
 footer {
   width: 100%;
   text-align: center; }
@@ -691,8 +694,5 @@ footer {
         margin-top: 0; } }
   footer .icons {
     padding-bottom: 0; }
-
-.safari-fix {
-  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
