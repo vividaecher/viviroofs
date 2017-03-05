@@ -163,9 +163,7 @@ header {
     padding: 30px 120px;
   }
 
-  @media screen and (min-width: $screen-hd) {
-    padding: 50px 120px;
-  }
+
 
   @media screen and (min-width: $screen-tv) {
     padding-left: 250px;
@@ -377,10 +375,6 @@ nav {
     @media screen and (min-width: $screen-laptop) {
       right: 120px;
       top: 34px;
-    }
-
-    @media screen and (min-width: $screen-hd) {
-      top: 54px;
     }
 
     @media screen and (min-width: $screen-tv) {
