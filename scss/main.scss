@@ -146,7 +146,7 @@ a {
   color: $secondary-color;
   text-decoration: none;
 
-  &:hover, &:focus {
+  &:hover {
     color: darken($secondary-color, 10%);
   }
 }
@@ -191,7 +191,7 @@ header {
     fill: $white;
 
     @media screen and (min-width: $screen-laptop) {
-      &:hover, &:focus {
+      &:hover {
         fill: $secondary-color;
       }
     }
@@ -341,8 +341,8 @@ nav {
       font-size: $navi-font-desktop;
       line-height: 110px;
 
-      &:focus, &:hover {
-        color: $secondary-color;
+      &:hover {
+         color: $secondary-color;
         transition: all ease .5s;
       }
     }
@@ -520,7 +520,7 @@ nav {
       transition: all ease .5s;
 
       @media screen and (min-width: $screen-laptop) {
-        &:hover, &:focus {
+        &:hover {
           fill: $secondary-color;
         }
       }
@@ -755,7 +755,7 @@ nav {
     }
 
     @media screen and (min-width: $screen-laptop) {
-      &:hover, &:focus {
+      &:hover {
         background: darken($secondary-color, 10%);
         transition: all ease .5s;
       }
@@ -791,7 +791,7 @@ nav {
     }
 
     @media screen and (min-width: $screen-laptop) {
-      &:hover, &:focus {
+      &:hover {
         background: $secondary-color;
         color: $white;
         transition: all ease 1s;

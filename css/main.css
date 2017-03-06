@@ -95,7 +95,7 @@ p {
 a {
   color: #42BDE2;
   text-decoration: none; }
-  a:hover, a:focus {
+  a:hover {
     color: #20a8d1; }
 
 header {
@@ -126,7 +126,7 @@ header {
   header .logo {
     fill: #fff; }
     @media screen and (min-width: 992px) {
-      header .logo:hover, header .logo:focus {
+      header .logo:hover {
         fill: #42BDE2; } }
   header .color-logo {
     fill: #42BDE2;
@@ -239,7 +239,7 @@ nav {
       nav a {
         font-size: 3.5rem;
         line-height: 110px; }
-        nav a:focus, nav a:hover {
+        nav a:hover {
           color: #42BDE2;
           transition: all ease .5s; } }
     @media screen and (min-width: 2000px) {
@@ -369,7 +369,7 @@ nav {
       fill: #fff;
       transition: all ease .5s; }
       @media screen and (min-width: 992px) {
-        nav .design-platforms .icons:hover, nav .design-platforms .icons:focus {
+        nav .design-platforms .icons:hover {
           fill: #42BDE2; } }
 
 .heading {
@@ -537,7 +537,7 @@ nav {
         width: 300px;
         padding: 15px 0; } }
     @media screen and (min-width: 992px) {
-      .cta-button .cta:hover, .cta-button .cta:focus {
+      .cta-button .cta:hover {
         background: #20a8d1;
         transition: all ease .5s; } }
 
@@ -564,7 +564,7 @@ nav {
         width: 300px;
         padding: 12px 0; } }
     @media screen and (min-width: 992px) {
-      .ghost-button .ghost:hover, .ghost-button .ghost:focus {
+      .ghost-button .ghost:hover {
         background: #42BDE2;
         color: #fff;
         transition: all ease 1s; } }
