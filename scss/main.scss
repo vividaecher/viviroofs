@@ -314,6 +314,20 @@ img {
     right: 50%;
     position: absolute;
     display: block;
+
+    .line {
+      fill: none;
+      stroke: $secondary-color;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit:10;
+
+      &:hover {
+        stroke: $white;
+        transition: all ease .3s;
+      }
+    }
   }
 }
 

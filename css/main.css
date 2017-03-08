@@ -218,7 +218,17 @@ img {
       bottom: 80px;
       right: 50%;
       position: absolute;
-      display: block; } }
+      display: block; }
+      .arrow .line {
+        fill: none;
+        stroke: #42BDE2;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10; }
+        .arrow .line:hover {
+          stroke: #fff;
+          transition: all ease .3s; } }
 
 nav {
   background-color: #010b16; }
