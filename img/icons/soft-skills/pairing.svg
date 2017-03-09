@@ -3,8 +3,7 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 53 53.7" style="enable-background:new 0 0 53 53.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#F5F5F5;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{enable-background:new    ;}
+	.st0{fill:none;stroke:#42BDE2;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
 	<ellipse class="st0" cx="26.5" cy="38.1" rx="18.5" ry="5.2"/>
@@ -13,5 +12,4 @@
 		c0,1,0.5,1.9,1.2,2.5l-4.1,5c-2.1,2.6-5.8,3.2-8.5,1.4L7.4,20C7.8,19.4,8,18.8,8,18.1c0-1.8-1.5-3.3-3.3-3.3s-3.3,1.5-3.3,3.3
 		c0,1.8,1.5,3.3,3.3,3.3c0.2,0,0.4,0,0.5-0.1L8,37.8"/>
 </g>
-<text transform="matrix(1 0 0 1 534 22)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Lorem ipsum</text>
 </svg>
