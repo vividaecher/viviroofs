@@ -36,13 +36,10 @@ html, body {
   font-weight: normal;
   font-style: normal; }
 
-h1 {
-  display: none; }
-
 h2 {
   font-family: 'montserratbold', sans-serif;
-  font-size: 2.25rem;
-  line-height: 45px;
+  font-size: 3.5rem;
+  line-height: 65px;
   color: #42BDE2;
   background: transparent;
   text-align: center;
@@ -53,11 +50,9 @@ h2 {
       font-size: 4.5rem; } }
   @media screen and (min-width: 1280px) {
     h2 {
-      font-size: 3.5rem;
       line-height: 70px; } }
   @media screen and (min-width: 1920px) {
     h2 {
-      font-size: 4.5rem;
       line-height: 90px; } }
   h2 span {
     font-family: 'montserratbold', sans-serif;
@@ -66,7 +61,7 @@ h2 {
 
 h3 {
   font-family: 'montserratbold', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #42BDE2;
   text-align: center;
   margin: 0;
@@ -74,7 +69,7 @@ h3 {
   @media screen and (min-width: 768px) {
     h3 {
       text-align: left;
-      font-size: 2.25rem; } }
+      font-size: 3.5rem; } }
 
 h4 {
   font-size: 1.325rem;
@@ -146,8 +141,6 @@ header {
     .wrapper {
       padding-left: 250px;
       padding-right: 250px; } }
-  .wrapper.sub-pages {
-    background: #fff; }
 
 section {
   padding: 40px; }
@@ -162,25 +155,15 @@ section {
   background: #010b16;
   color: #f5f5f5; }
 
+.first-section {
+  padding-top: 120px; }
+  @media screen and (min-width: 768px) {
+    .first-section {
+      padding-top: 170px; } }
+
 .light-bg {
   background: #fff; }
 
-/*.wrapper-start {
-  background: $white;
-  padding-left: 40px;
-  padding-right: 40px;
-  min-height: 100%;
-
-  @media screen and (min-width: $screen-laptop) {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-
-  @media screen and (min-width: $screen-tv) {
-    padding-left: 250px;
-    padding-right: 250px;
-  }
-}*/
 img {
   width: 100%; }
 
@@ -205,7 +188,7 @@ img {
     z-index: 1;
     margin-top: 150px; }
     .container-start .start-headline h2 {
-      color: #fff; }
+      color: #f5f5f5; }
     @media screen and (min-width: 1280px) {
       .container-start .start-headline {
         align-self: center;
@@ -255,7 +238,7 @@ nav {
   nav a {
     color: white;
     font-family: 'montserratbold', sans-serif;
-    font-size: 2.25rem;
+    font-size: 3.5rem;
     font-size: 2.25rem;
     line-height: 70px;
     text-decoration: none; }
@@ -411,12 +394,6 @@ nav {
 .container {
   display: flex;
   flex-direction: column-reverse; }
-  .container:last-child {
-    /*margin-bottom: 80px;
-
-    @media screen and (min-width: $screen-tablet) {
-      margin-bottom: 150px;
-    }*/ }
   @media screen and (min-width: 1280px) {
     .container {
       flex-direction: row; } }
@@ -430,8 +407,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px; }
+    align-items: center; }
     @media screen and (min-width: 1280px) {
       .container .right {
         width: 40%;
@@ -444,7 +420,11 @@ nav {
         .container .right .alignment {
           padding-top: 68px; } }
     .container .right img {
-      width: 80%; }
+      width: 100%;
+      padding-bottom: 40px; }
+      @media screen and (min-width: 1280px) {
+        .container .right img {
+          padding-bottom: 0; } }
 
 .container-portfolio {
   display: flex;
@@ -492,7 +472,7 @@ nav {
         text-align: left;
         font-size: 3.5rem; } }
   .container-portfolio h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: left; }
   @media screen and (min-width: 992px) {
     .container-portfolio .left-portfolio {
