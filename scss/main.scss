@@ -127,7 +127,11 @@ p {
   font-size: $fliestext;
   padding-bottom: 40px;
   margin: 0;
-  line-height: 40px;
+  line-height: 35px;
+
+  @media screen and (min-width: $screen-tablet) {
+    line-height: 40px;
+  }
 
   strong {
     color: $secondary-color;
@@ -633,6 +637,10 @@ nav {
 
   h3 {
     text-align: left;
+    font-size: 1.5rem;
+    @media screen and (min-width: $screen-tablet) {
+      font-size: $headline-medium;
+    }
   }
 
   wbr {

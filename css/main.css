@@ -80,7 +80,10 @@ p {
   font-size: 1.325rem;
   padding-bottom: 40px;
   margin: 0;
-  line-height: 40px; }
+  line-height: 35px; }
+  @media screen and (min-width: 768px) {
+    p {
+      line-height: 40px; } }
   p strong {
     color: #42BDE2; }
   p span {
@@ -441,7 +444,11 @@ nav {
       .container-portfolio h2 {
         text-align: left; } }
   .container-portfolio h3 {
-    text-align: left; }
+    text-align: left;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .container-portfolio h3 {
+        font-size: 2.25rem; } }
   .container-portfolio wbr {
     display: block; }
     @media screen and (min-width: 768px) {
