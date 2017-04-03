@@ -129,6 +129,10 @@ header {
   header .color-logo {
     fill: #42BDE2;
     transition: all ease .5s; }
+    header .color-logo:hover {
+      fill: #fff; }
+  header .current-lang {
+    color: #42BDE2; }
   header .language {
     position: absolute;
     padding: 0;
@@ -436,6 +440,12 @@ nav {
       .container .left {
         width: 60%;
         padding-right: 120px; } }
+    @media screen and (min-width: 1920px) {
+      .container .left {
+        padding-right: 170px; } }
+    @media screen and (min-width: 2000px) {
+      .container .left {
+        padding-right: 280px; } }
   .container .right {
     width: 100%;
     display: flex;

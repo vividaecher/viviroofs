@@ -25,4 +25,5 @@ $(window).scroll(function(e){
   }else {
     $('.navbar-toggle span').removeClass('color-span');
   }
+
 });
