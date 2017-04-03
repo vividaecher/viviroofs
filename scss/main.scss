@@ -164,8 +164,6 @@ header {
     padding: 40px 120px;
   }
 
-
-
   @media screen and (min-width: $screen-tv) {
     padding-left: 250px;
     padding-right: 250px;
@@ -201,6 +199,45 @@ header {
   .color-logo {
     fill: $secondary-color;
     transition: all ease .5s;
+  }
+
+  .language {
+    position: absolute;
+    padding: 0;
+    right: 95px;
+    bottom: -11px;
+
+   li {
+     display: inline;
+     list-style-type: none;
+   }
+
+    a {
+      font-size: $fliestext;
+      font-family: 'montserratregular', sans-serif;
+    }
+
+    span {
+      color: $white;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      bottom: -32px;
+    }
+
+    @media screen and (min-width: $screen-laptop) {
+      right: 180px;
+      bottom: -15px;
+    }
+
+    @media screen and (min-width: $screen-desktop) {
+      bottom: -10px;
+    }
+
+    @media screen and (min-width: $screen-tv) {
+      right: 313px;
+      bottom: -29px;
+    }
   }
 }
 
@@ -401,7 +438,7 @@ nav {
 
     @media screen and (min-width: $screen-laptop) {
       right: 120px;
-      top: 34px;
+      top: 43px;
     }
 
     @media screen and (min-width: $screen-tv) {

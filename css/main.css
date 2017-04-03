@@ -129,6 +129,33 @@ header {
   header .color-logo {
     fill: #42BDE2;
     transition: all ease .5s; }
+  header .language {
+    position: absolute;
+    padding: 0;
+    right: 95px;
+    bottom: -11px; }
+    header .language li {
+      display: inline;
+      list-style-type: none; }
+    header .language a {
+      font-size: 1.325rem;
+      font-family: 'montserratregular', sans-serif; }
+    header .language span {
+      color: #fff; }
+    @media screen and (min-width: 768px) {
+      header .language {
+        bottom: -32px; } }
+    @media screen and (min-width: 992px) {
+      header .language {
+        right: 180px;
+        bottom: -15px; } }
+    @media screen and (min-width: 1280px) {
+      header .language {
+        bottom: -10px; } }
+    @media screen and (min-width: 2000px) {
+      header .language {
+        right: 313px;
+        bottom: -29px; } }
 
 .wrapper {
   padding-left: 40px;
@@ -281,7 +308,7 @@ nav {
     @media screen and (min-width: 992px) {
       nav .navbar-toggle {
         right: 120px;
-        top: 34px; } }
+        top: 43px; } }
     @media screen and (min-width: 2000px) {
       nav .navbar-toggle {
         right: 250px; } }
