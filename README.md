@@ -1,2 +1,2 @@
-# viviroofs
-Hello! I am Vivi. I am a Frontend- UX-Designer from Cologne. This will be my own portflio website.
+# vividaecher
+Hello! I am Vivi. I am a Webdesigner from Cologne. This is my own portflio website.
