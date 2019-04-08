@@ -72,7 +72,7 @@ html, body {
 }
 
 
-h2 {
+h1, h2 {
   font-family: 'montserratbold', sans-serif;
   font-size: $headline-medium;
   line-height: 55px;
@@ -324,7 +324,7 @@ img {
     z-index: 1;
     margin-top: 150px;
 
-    h2 {
+    h1, h2 {
       color: $dark-white;
     }
 
@@ -334,7 +334,7 @@ img {
       width: 30%;
       margin-top: 85px;
 
-      h2 {
+      h1, h2 {
         margin-right: -195px;
         text-align: left;
       }
@@ -606,7 +606,7 @@ nav {
 .heading {
   width: 100%;
   padding-bottom: 40px;
-  h2 {
+  h1, h2 {
     margin: 0;
   }
 }
@@ -677,7 +677,7 @@ nav {
     flex-direction: row;
   }
 
-  h2 {
+  h1, h2 {
     padding: 20px 0;
 
     @media screen and (min-width: $screen-tablet) {
