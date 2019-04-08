@@ -19,6 +19,18 @@ module.exports = function(grunt) {
             }
         },
 
+        cssmin: {
+          target: {
+            files: [{
+              expand: true,
+              cwd: 'css',
+              src: ['main.css', 'main.min.css'],
+              dest: 'css',
+              ext: '.min.css'
+            }]
+          }
+        },
+
       watch: {
         files: ['scss/*.scss'],
         tasks: ['default'],
@@ -28,9 +40,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-sass');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean', 'sass']);
+  grunt.registerTask('default', ['clean', 'sass', 'cssmin']);
 
 };
