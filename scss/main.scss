@@ -56,6 +56,14 @@ html, body {
   height: 100%;
 }
 
+.margin-top {
+  margin-top: 90px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 
 @font-face {
   font-family: 'montserratregular';
@@ -472,6 +480,10 @@ nav {
         transition: all .3s ease;
         left: 8px;
         bottom: 12px;
+
+        &:hover {
+          background: $secondary-color !important;
+        }
       }
 
       span:nth-child(1) {

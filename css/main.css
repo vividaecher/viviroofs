@@ -610,6 +610,12 @@ body {
 html, body {
   height: 100%; }
 
+.margin-top {
+  margin-top: 90px; }
+
+.active {
+  text-decoration: underline; }
+
 @font-face {
   font-family: 'montserratregular';
   src: url("../font/montserrat-regular-webfont.woff2") format("woff2"), url("../font/montserrat-regular-webfont.woff") format("woff");
@@ -918,6 +924,8 @@ nav {
         transition: all .3s ease;
         left: 8px;
         bottom: 12px; }
+        nav .navbar-toggle.close-navigation span:hover {
+          background: #42BDE2 !important; }
       nav .navbar-toggle.close-navigation span:nth-child(1) {
         width: 25px;
         transform: rotate(-45deg); }
