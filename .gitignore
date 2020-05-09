@@ -182,6 +182,9 @@ local.properties
 .idea/gradle.xml
 .idea/libraries
 
+# PHPStorm
+.idea/
+
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
 
