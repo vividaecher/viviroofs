@@ -584,6 +584,43 @@ body.chocolat-open > .chocolat-content {
   visibility: hidden;
   opacity: 0; }
 
+.box {
+  position: relative; }
+
+.wave {
+  position: absolute;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  border-radius: 43%; }
+
+.wave.-one {
+  animation: rotate 7000ms infinite linear;
+  opacity: .25;
+  background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box; }
+
+.wave.-two {
+  animation: rotate 3000ms infinite linear;
+  opacity: .5;
+  background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box; }
+
+.wave.-three {
+  animation: rotate 7500ms infinite linear;
+  opacity: .75;
+  background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box; }
+
+.wave.-four {
+  animation: rotate 7500ms infinite linear;
+  opacity: 1;
+  background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg); } }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
