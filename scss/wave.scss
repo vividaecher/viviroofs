@@ -1,38 +1,64 @@
-
-.box {
+.light-bg {
     position: relative;
 }
+
+.box-waves {
+height: 100%;
+}
+
+.box {
+    transform: rotate(25deg);
+}
+
 .wave {
     position: absolute;
-    width: 1500px;
-    height: 1300px;
-    margin-left: -150px;
-    margin-top: -250px;
-    border-radius: 43%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
 }
 
 .wave.-one {
-    animation: rotate 7000ms infinite linear;
+    //animation: rotate 7000ms infinite linear;
     opacity: .25;
-    background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #ff5b00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 240%;
 }
 
 .wave.-two {
-    animation: rotate 3000ms infinite linear;
+    //animation: rotate 3000ms infinite linear;
     opacity: .5;
     background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 60%;
 }
 
 .wave.-three {
-    animation: rotate 7500ms infinite linear;
+    //animation: rotate 7500ms infinite linear;
     opacity: .75;
     background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 80%;
 }
 
 .wave.-four {
-    animation: rotate 7500ms infinite linear;
+    //animation: rotate 7500ms infinite linear;
     opacity: 1;
     background: transparent linear-gradient(90deg, #FF4700 0%, #FF4A00 20%, #FF5B00 60%, #FF6500 80%, #FF6A00 100%) 0% 0% no-repeat padding-box;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 100%;
 }
 
 @keyframes rotate {
