@@ -1,1 +1,36 @@
-body {background-color: #ffff00;}
+@import "normalize";
+$primary-color: #293E53;
+$secondary-color: #FFBA00;
+
+body {
+  background: #fff;
+  font-family: 'Coda', cursive;
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: 'Abril Fatface', cursive;
+  color: #fff;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  font-family: 'Abril Fatface', cursive;
+  color: $secondary-color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-color;
+  padding: 25px 35px;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
