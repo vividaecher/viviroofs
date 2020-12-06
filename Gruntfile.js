@@ -14,7 +14,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/main.css': 'scss/main.scss'
+                    'css/main.css': 'scss/main.scss',
+                    'css/main_redesign.css': 'scss/main_redesign.scss'
                 }
             }
         },
@@ -24,7 +25,7 @@ module.exports = function(grunt) {
             files: [{
               expand: true,
               cwd: 'css',
-              src: ['main.css', 'main.min.css'],
+              src: ['main.css', 'main.min.css','main_redesign.css', 'main_redesign.min.css'],
               dest: 'css',
               ext: '.min.css'
             }]
