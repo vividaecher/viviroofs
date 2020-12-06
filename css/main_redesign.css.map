@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "main_redesign.css",
+	"sources": [
+		"../scss/main_redesign.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EAAC,gBAAgB,EAAE,IAAI,GAAG"
+}
