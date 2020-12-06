@@ -5,5 +5,5 @@
 		"../scss/main_redesign.scss"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,CAAC;EAAC,gBAAgB,EAAE,IAAI,GAAG"
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EAAC,gBAAgB,EAAE,OAAO,GAAG"
 }
