@@ -1,7 +1,6 @@
 @import "normalize";
 $primary-color: #293E53;
 $secondary-color: #FFBA00;
-
 $screen-tablet: 768px;
 $screen-laptop: 992px;
 $screen-desktop: 1280px;
@@ -30,7 +29,11 @@ body {
   .container {
     min-height: 400px;
     height: 100%;
-    padding-top: 45px;
+    padding-top: 180px;
+
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 45px;
+    }
   }
 }
 
