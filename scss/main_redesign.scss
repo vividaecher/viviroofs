@@ -17,14 +17,37 @@ body {
   position: relative;
 }
 
+.diagonal-box {
+  padding-left: 15px;
+  padding-right: 15px;
+  transform: skewY(-6deg);
+  background: $primary-color;
+
+  p {
+    color: #fff;
+  }
+
+  .container {
+    min-height: 400px;
+    height: 100%;
+    padding-top: 45px;
+  }
+}
+
 .container, .container-header {
   margin: 0 auto;
   width: 100%;
   transform: skewY(6deg);
 
+  display: flex;
+  flex-direction: column;
+
   @media screen and (min-width: $screen-tablet) {
     padding: 0;
     max-width: $screen-tablet;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   @media screen and (min-width: $screen-laptop) {
     max-width: $screen-laptop;
@@ -45,6 +68,22 @@ body {
   }
 }
 
+.container-left {
+  width: 100%;
+
+  @media screen and (min-width: $screen-tablet) {
+    width: 50%;
+  }
+}
+
+.container-right {
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: $screen-tablet) {
+    width: 50%;
+  }
+}
 
 a {
   text-decoration: none;
@@ -67,30 +106,12 @@ h2 {
 
 header {
   background: $primary-color;
-  padding: 15px 35px;
+  padding: 15px;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
-  z-index: 2;
-
-
-  .container-header {
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (min-width: $screen-tablet) {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-}
-
-.diagonal-box {
-  background: $primary-color;
-  /*padding-left: 20px;
-  padding-right: 20px;*/
-  transform: skewY(-6deg);
+  top: 0;
+  z-index: 1;
 }
 
 nav {
