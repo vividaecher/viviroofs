@@ -1,6 +1,7 @@
 @import "normalize";
 $primary-color: #293E53;
 $secondary-color: #FFBA00;
+$screen-phone: 383px;
 $screen-tablet: 768px;
 $screen-laptop: 992px;
 $screen-desktop: 1280px;
@@ -8,7 +9,7 @@ $screen-hd: 1920px;
 $screen-tv: 2000px;
 
 body {
-  background: #fff;
+  background: $primary-color;
   font-family: 'Coda', cursive;
   color: $primary-color;
   font-size: 16px;
@@ -16,7 +17,7 @@ body {
   position: relative;
 }
 
-.diagonal-box {
+.diagonal-box,.diagonal-box-bright  {
   padding-left: 15px;
   padding-right: 15px;
   transform: skewY(-6deg);
@@ -29,10 +30,20 @@ body {
   .container {
     min-height: 400px;
     height: 100%;
-    padding-top: 180px;
+    padding-top: 200px;
 
+    @media screen and (min-width: $screen-phone) {
+      padding-top: 145px;
+    }
     @media screen and (min-width: $screen-tablet) {
       padding-top: 45px;
+    }
+  }
+
+  &.diagonal-box-bright {
+    background: white;
+    p {
+      color: $primary-color;
     }
   }
 }
@@ -41,7 +52,6 @@ body {
   margin: 0 auto;
   width: 100%;
   transform: skewY(6deg);
-
   display: flex;
   flex-direction: column;
 
@@ -71,7 +81,17 @@ body {
   }
 }
 
-.container-left {
+.container-right {
+  width: 100%;
+  @media screen and (min-width: $screen-tablet) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container-left-stage, .container-left {
   width: 100%;
 
   @media screen and (min-width: $screen-tablet) {
@@ -79,17 +99,43 @@ body {
   }
 }
 
-.container-right {
+.container-right-stage {
   width: 100%;
-  text-align: center;
+  background-image: url("../redesign/stars.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: $screen-tablet) {
     width: 50%;
   }
+}
+
+.btn {
+  color: $primary-color;
+  background: $secondary-color;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 15px 100px;
+  transition: all ease .3s;
+  border: solid 2px $secondary-color;
+
+  &:hover, &:active, &:focus {
+    background: $primary-color;
+    border: solid 2px white;
+    color: white;
+  }
+
 }
 
 a {
   text-decoration: none;
+  color: white;
+  border-bottom: solid 2px $secondary-color;
 }
 
 h1 {
@@ -115,6 +161,10 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+
+  a {
+    border: none;
+  }
 }
 
 nav {
@@ -125,12 +175,28 @@ nav {
     justify-content: space-between;
   }
 
+  ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    line-height: 36px;
+  }
+
   li {
+    list-style: none;
+    padding-right: 15px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
     a {
       color: #fff;
       text-decoration: none;
       font-size: 16px;
       line-height: 20px;
+      border: none;
     }
   }
 }
