@@ -31,12 +31,15 @@ body {
     min-height: 400px;
     height: 100%;
     padding-top: 200px;
+    padding-bottom: 200px;
 
     @media screen and (min-width: $screen-phone) {
       padding-top: 145px;
+      padding-bottom: 145px;
     }
     @media screen and (min-width: $screen-tablet) {
       padding-top: 45px;
+      padding-bottom: 45px;
     }
   }
 
@@ -66,18 +69,24 @@ body {
     max-width: $screen-laptop;
   }
   @media screen and (min-width: $screen-desktop) {
-    max-width: $screen-desktop;
+    max-width: $screen-laptop;
   }
   @media screen and (min-width: $screen-hd){
-    max-width: $screen-hd;
+    max-width: $screen-desktop;
   }
   @media screen and (min-width: $screen-tv) {
-    max-width: $screen-tv;
+    max-width: $screen-hd;
   }
 
   &.container-header {
     transform: none;
     position: relative;
+  }
+}
+
+#aboutme {
+  .container-right {
+    display: block;
   }
 }
 
@@ -200,3 +209,11 @@ nav {
     }
   }
 }
+
+.st0{fill:#FFBA00;}
+.st1{fill:#293E53;}
+.st2{font-family:'Coda-Regular';}
+.st3{font-size:15px;}
+.st4{display:none;}
+.st5{display:inline;fill:#FFBA00;}
+.st6{display:none;fill:none;stroke:#FFBA00;stroke-miterlimit:10;}

@@ -420,13 +420,16 @@ body {
   .diagonal-box .container, .diagonal-box-bright .container {
     min-height: 400px;
     height: 100%;
-    padding-top: 200px; }
+    padding-top: 200px;
+    padding-bottom: 200px; }
     @media screen and (min-width: 383px) {
       .diagonal-box .container, .diagonal-box-bright .container {
-        padding-top: 145px; } }
+        padding-top: 145px;
+        padding-bottom: 145px; } }
     @media screen and (min-width: 768px) {
       .diagonal-box .container, .diagonal-box-bright .container {
-        padding-top: 45px; } }
+        padding-top: 45px;
+        padding-bottom: 45px; } }
   .diagonal-box.diagonal-box-bright, .diagonal-box-bright.diagonal-box-bright {
     background: white; }
     .diagonal-box.diagonal-box-bright p, .diagonal-box-bright.diagonal-box-bright p {
@@ -450,16 +453,19 @@ body {
       max-width: 992px; } }
   @media screen and (min-width: 1280px) {
     .container, .container-header {
-      max-width: 1280px; } }
+      max-width: 992px; } }
   @media screen and (min-width: 1920px) {
     .container, .container-header {
-      max-width: 1920px; } }
+      max-width: 1280px; } }
   @media screen and (min-width: 2000px) {
     .container, .container-header {
-      max-width: 2000px; } }
+      max-width: 1920px; } }
   .container.container-header, .container-header.container-header {
     transform: none;
     position: relative; }
+
+#aboutme .container-right {
+  display: block; }
 
 .container-right {
   width: 100%; }
@@ -555,5 +561,30 @@ nav {
       font-size: 16px;
       line-height: 20px;
       border: none; }
+
+.st0 {
+  fill: #FFBA00; }
+
+.st1 {
+  fill: #293E53; }
+
+.st2 {
+  font-family: 'Coda-Regular'; }
+
+.st3 {
+  font-size: 15px; }
+
+.st4 {
+  display: none; }
+
+.st5 {
+  display: inline;
+  fill: #FFBA00; }
+
+.st6 {
+  display: none;
+  fill: none;
+  stroke: #FFBA00;
+  stroke-miterlimit: 10; }
 
 /*# sourceMappingURL=main_redesign.css.map */
