@@ -358,10 +358,11 @@ img {
   .start-img {
     width: 100%;
     margin-top: 55px;
+    margin-bottom: -5px;
 
     @media screen and (min-width: $screen-desktop) {
       width: 70%;
-      margin-top: 130px;
+      margin-top: 131px;
     }
 
     @media screen and (min-width: $screen-tv) {
