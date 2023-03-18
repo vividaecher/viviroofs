@@ -1,6 +1,8 @@
 @import "normalize";
 $primary-color: #293E53;
 $secondary-color: #FFBA00;
+$offwhite: darken(white, 10%);
+$darkblue: rgb(50,50,60);
 $screen-phone: 383px;
 $screen-tablet: 768px;
 $screen-laptop: 992px;
@@ -13,7 +15,7 @@ body {
   font-family: 'Coda', cursive;
   color: $primary-color;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   position: relative;
 }
 
@@ -87,13 +89,13 @@ body {
 #aboutme {
   .container-right {
     display: block;
+    width: 45%;
   }
 }
 
 .container-right {
   width: 100%;
   @media screen and (min-width: $screen-tablet) {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +106,7 @@ body {
   width: 100%;
 
   @media screen and (min-width: $screen-tablet) {
-    width: 50%;
+    width: 45%;
   }
 }
 
@@ -164,7 +166,7 @@ h2 {
 
 header {
   background: $primary-color;
-  padding: 15px;
+  padding: 0 15px;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
@@ -204,7 +206,7 @@ nav {
       color: #fff;
       text-decoration: none;
       font-size: 16px;
-      line-height: 20px;
+      line-height: px;
       border: none;
     }
   }
@@ -217,3 +219,75 @@ nav {
 .st4{display:none;}
 .st5{display:inline;fill:#FFBA00;}
 .st6{display:none;fill:none;stroke:#FFBA00;stroke-miterlimit:10;}
+
+
+.btn-primary {
+  position: relative;
+  border: none;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 50px;
+  margin: 0 10px;
+  padding: 15px 10px 10px 10px;
+  border: 3px solid transparent;
+  max-width: 260px;
+  width: 100%;
+  font-family: 'Coda', sans-serif;
+  cursor: pointer;
+  text-align: center;
+
+  &:active {
+    transform: translateY(3px);
+  }
+    
+  &::after, &::before {
+    border-radius: 50px;
+  } 
+}
+
+.shrink-border{ 
+  background-color: transparent;
+  color: $secondary-color, 10%;
+  
+  &:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: $offwhite;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid $secondary-color;
+    transition: opacity 0.3s, border 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+    
+  &::after{ 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 3px solid $offwhite;
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+}
